@@ -1,0 +1,34 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ItipoCasilleros,Iocupados, Icasilleros }  from './../model/index';
+import { environment } from 'src/environments/environment';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class LockerService {
+
+  constructor(
+    private http: HttpClient
+  ) { }
+
+  getCasilleros(): Observable<ItipoCasilleros[]> {
+    return this.http.get<ItipoCasilleros[]>(
+    ` ${environment.endpoint}/tipoCasilleros`
+    );
+  }
+
+  getOcupados(): Observable<Iocupados[]> {
+    return this.http.get<Iocupados[]>(
+    ` ${environment.endpoint}/ocupados`
+    );
+  }
+
+getParrillaCasilleros(tipo: string): Observable<Icasilleros[]> {
+  return this.http.get<Icasilleros[]>(
+  ` ${environment.endpoint}/${tipo}`
+  );
+}
+  
+}

@@ -1,26 +1,26 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CrearProductoComponent } from './components/crear-producto/crear-producto.component';
-import { ListarProductoComponent } from './components/listar-producto/listar-producto.component';
 import { BorrarProductoComponent } from './components/borrar-producto/borrar-producto.component';
-import { ProductoComponent } from './components/producto/producto.component';
+import { LockerComponent } from './components/locker/locker.component';
+import { SaveComponent } from './components/save/save.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: ProductoComponent,
+    component: LockerComponent,
     children: [
       {
-        path: 'crear',
+        path: 'config',
         component: CrearProductoComponent
       },
       {
-        path: 'listar',
-        component: ListarProductoComponent
+        path: 'save',
+        component: SaveComponent
       },
       {
-        path: 'borrar',
+        path: 'collect',
         component: BorrarProductoComponent
       }
     ]
@@ -31,4 +31,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ProductoRoutingModule { }
+export class LockersRoutingModule { }

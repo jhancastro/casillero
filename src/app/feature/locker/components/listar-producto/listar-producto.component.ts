@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { ProductoService } from '@producto/shared/service/producto.service';
-import { Producto } from '@producto/shared/model/producto';
+import { ProductoService } from '@locker/shared/service/producto.service';
+import { Producto } from '@locker/shared/model/producto';
 
 @Component({
   selector: 'app-listar-producto',
@@ -15,7 +15,7 @@ export class ListarProductoComponent implements OnInit {
   constructor(protected productoService: ProductoService) { }
 
   ngOnInit() {
-    this.listaProductos = this.productoService.consultar();
+   // this.listaProductos = this.productoService.consultar();
   }
 
 }

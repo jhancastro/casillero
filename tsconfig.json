@@ -30,11 +30,14 @@
       "@home/*": [
         "src/app/feature/home/*"
       ],
-      "@producto/*": [
-        "src/app/feature/producto/*"
+      "@locker/*": [
+        "src/app/feature/locker/*"
       ],
       "@shared/*": [
         "src/app/shared/*"
+      ],
+      "@casilleroModel/*": [
+        "src/app/feature/locker/shared/model/*"
       ]
     }
   },

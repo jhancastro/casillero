@@ -1,0 +1,21 @@
+.tarjeta{
+    width: 7rem !important;
+    padding-top: 5%;
+}
+
+.forma {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+@media screen and (max-width: 400px) {
+    .tarjeta{
+        width: 7rem !important;
+        padding-top: 2%;
+    }
+
+    .forma {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

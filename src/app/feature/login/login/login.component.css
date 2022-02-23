@@ -1,0 +1,82 @@
+.btn-primary:hover {
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+}
+
+
+@media (max-width: 1200px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 410px) {
+}
+@media (max-width: 320px) {
+}
+
+/* revisar*/
+body {
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.label-create{
+  padding: 15px 15px 15px 15px;
+  border: 1px solid #000;
+}
+.div-card{
+  width: 30% !important;
+  height: 45% !important;;
+  align-content: center !important;
+  align-items: center !important;
+  border: black !important;
+  padding-right: 35%;
+  padding-left: 35%;
+  padding-top: 100px;
+
+}
+.card-personal {
+  align-content: center !important;
+  align-items: center !important;
+  border: 1px solid #000;
+  padding-top: 29px;
+  padding-bottom: 25px;
+}
+
+.label-error{
+  text-decoration-color: red !important;
+  font-size: 12px !important;
+}
+
+.card-header-mod{
+  background-color: #535d99;
+  color: white;
+  text-align: center;
+
+  display: grid;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.input-login {
+  box-shadow: inset 0 1px 4px rgb(0 0 0 / 10%), 0 0 0 transparent;
+  border: 1px solid;
+  border-radius: 0;
+  background-color: #f3f7f7;
+  color: #0e141e;
+  height: 36px;
+  outline: none;
+  font-size: 14px;
+  padding: 1px 10px;
+  /* border-bottom: 2px solid transparent; */
+  transition: border-bottom 0.1s ease-in-out;
+  width: 160px !important;
+}

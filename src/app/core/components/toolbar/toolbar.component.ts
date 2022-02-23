@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -25,13 +26,33 @@ import { Component, OnInit } from '@angular/core';
     height: 24px;
     margin-top: 12px;
     width: 24px;
+  }
+  .tittle{
+    display: inline;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 0.1px;
+    line-height: 48px;
+    margin-left: 0%;
+  }
+  .danger{
+    font-size: 20px;
+    margin-left: 85%;
   }`]
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private readonly router: Router,
+  ) { }
 
   ngOnInit() {
   }
+
+  public logout(): void {
+    this.router.navigateByUrl('/login');
+    localStorage.removeItem('token');
+  }
+
 
 }

@@ -58,6 +58,9 @@ stage('NPM Install') {
 
 stage('Static Code Analysis') {
    steps{
+       withSonarQubeEnv('Sonar') {
+sh "${tool name: 'SonarScanner', type:'hudson.plugins.sonar.SonarRunnerInstallation'}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
+        }
         sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:[casillero.front.jhan.castro]', 
         sonarName:'CeibaADN-Casillero-Front(jhan.castro)', 
         sonarPathProperties:'./sonar-project.properties')

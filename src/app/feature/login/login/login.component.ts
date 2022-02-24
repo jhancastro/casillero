@@ -47,7 +47,6 @@ export class LoginComponent implements OnInit{
       this.error = 'User/password incorrect';
       return false;
     }
-
   }
 
   public redirectUsers(): void {

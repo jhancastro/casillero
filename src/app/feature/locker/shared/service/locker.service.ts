@@ -1,8 +1,8 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ItipoCasilleros,Iocupados, Icasilleros }  from './../model/index';
 import { environment } from 'src/environments/environment';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 export class LockerService {
 
   constructor(
-    private http: HttpClient
+    protected http: HttpClient
   ) { }
 
   getCasilleros(): Observable<ItipoCasilleros[]> {

@@ -43,7 +43,7 @@ import {Router} from '@angular/router';
 export class ToolbarComponent implements OnInit {
 
   constructor(
-    private readonly router: Router,
+    protected readonly router: Router,
   ) { }
 
   ngOnInit() {

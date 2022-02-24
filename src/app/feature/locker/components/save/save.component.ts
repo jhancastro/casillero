@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LockerService } from '@locker/shared/service/locker.service';
-import { Icasilleros, Iocupados, ItipoCasilleros }  from './../../shared/model';
+import { Icasilleros, ItipoCasilleros }  from './../../shared/model';
 
 @Component({
   templateUrl: './save.component.html',
@@ -8,12 +8,11 @@ import { Icasilleros, Iocupados, ItipoCasilleros }  from './../../shared/model';
 })
 export class SaveComponent implements OnInit {
   typeLocker : ItipoCasilleros[];
-  busyLocker : Iocupados[];
   sencillos : Icasilleros[];
   dobles : Icasilleros[];
 
   constructor(
-    public lockerService : LockerService
+    protected lockerService : LockerService,
   ) { }
 
   async ngOnInit() {

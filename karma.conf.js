@@ -11,6 +11,7 @@ module.exports = function (config) {
       require('@angular-devkit/build-angular/plugins/karma'),
       require('karma-mocha-reporter'),
       require('karma-junit-reporter')
+      require('karma-jasmine-html-reporter'),
     ],
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser

@@ -16,6 +16,18 @@ module.exports = function (config) {
     client: {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
+    remapIstanbulReporter: {
+      dir : 'reports/test-results/coverage',
+      reports: {
+        html: 'coverage',
+        lcovonly: 'reports/test-results/coverage/coverage.lcov'
+      }
+    },
+    coverageIstanbulReporter: {
+      dir: require('path').join(__dirname, 'reports/coverage/app-base'),
+      reports: ['html', 'lcovonly', 'text-summary'],
+      fixWebpackSourcePaths: true
+    },
     reporters: ['progress', 'kjhtml','junit'],
     port: 9876,
     colors: true,
@@ -25,9 +37,10 @@ module.exports = function (config) {
     singleRun: true,
     restartOnFileChange: true,
     junitReporter: {
-      useBrowserName: false,
-      outputFile: 'unit.xml',
-      suite: 'unit'
+      outputDir: 'reports/unit',
+      outputFile: 'test-results.xml',
+      suite: '',
+      useBrowserName: false
     }
   });
 };

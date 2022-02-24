@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<testsuite name="Chrome Headless 98.0.4758.102 (Windows 10)" package="unit" timestamp="2022-02-24T23:15:19" id="0" hostname="JHAN-CASTRO" tests="21" errors="0" failures="0" time="0.131">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/98.0.4758.102 Safari/537.36"/>
+  </properties>
+  <testcase name="NavbarComponent should create" time="0.029" classname=".NavbarComponent"/>
+  <testcase name="ToolbarComponent should create" time="0.008" classname=".ToolbarComponent"/>
+  <testcase name="SecurityGuard should ..." time="0.002" classname=".SecurityGuard"/>
+  <testcase name="HomeComponent should create" time="0.006" classname=".HomeComponent"/>
+  <testcase name="LockerService should be created" time="0.002" classname=".LockerService"/>
+  <testcase name="FilterLockerByTypePipe create an instance" time="0" classname=".FilterLockerByTypePipe"/>
+  <testcase name="AppComponent should create the app" time="0.005" classname=".AppComponent"/>
+  <testcase name="AppComponent should have as title 'app-base'" time="0.004" classname=".AppComponent"/>
+  <testcase name="ProductoService deberia listar productos" time="0.003" classname=".ProductoService"/>
+  <testcase name="ProductoService should be created" time="0.001" classname=".ProductoService"/>
+  <testcase name="ProductoService deberia eliminar un producto" time="0.001" classname=".ProductoService"/>
+  <testcase name="ProductoService deberia crear un producto" time="0.001" classname=".ProductoService"/>
+  <testcase name="ErrorCamposPlantillaComponent should create" time="0.006" classname=".ErrorCamposPlantillaComponent"/>
+  <testcase name="FilterLockerByStatePipe create an instance" time="0" classname=".FilterLockerByStatePipe"/>
+  <testcase name="BorrarProductoComponent should create" time="0.005" classname=".BorrarProductoComponent"/>
+  <testcase name="CrearProductoComponent should create" time="0.011" classname=".CrearProductoComponent"/>
+  <testcase name="CrearProductoComponent formulario es invalido cuando esta vacio" time="0.006" classname=".CrearProductoComponent"/>
+  <testcase name="CrearProductoComponent Registrando producto" time="0.01" classname=".CrearProductoComponent"/>
+  <testcase name="LockerComponent should create" time="0.005" classname=".LockerComponent"/>
+  <testcase name="SaveComponent should create" time="0.013" classname=".SaveComponent"/>
+  <testcase name="LoginComponent should create" time="0.013" classname=".LoginComponent"/>
+  <system-out>
+    <![CDATA[Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0303: Can't bind to 'items' since it isn't a known property of 'app-navbar'.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0303: Can't bind to 'items' since it isn't a known property of 'app-navbar'.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-tab-group' is not a known element:
+1. If 'mat-tab-group' is an Angular component, then verify that it is part of this module.
+2. If 'mat-tab-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-tab' is not a known element:
+1. If 'mat-tab' is an Angular component, then verify that it is part of this module.
+2. If 'mat-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-chip-list' is not a known element:
+1. If 'mat-chip-list' is an Angular component, then verify that it is part of this module.
+2. If 'mat-chip-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-tab' is not a known element:
+1. If 'mat-tab' is an Angular component, then verify that it is part of this module.
+2. If 'mat-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-chip-list' is not a known element:
+1. If 'mat-chip-list' is an Angular component, then verify that it is part of this module.
+2. If 'mat-chip-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>

@@ -58,8 +58,8 @@ stage('NPM Install') {
 
 stage('Static Code Analysis') {
    steps{
-        sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:casillero.front.jhan.castro', 
-        sonarName:'''"CeibaADN-Casillero-Front(jhan.castro)"''', 
+        sonarqubeMasQualityGatesP(sonarKey:'co.com.ceiba.adn:casillero.front-jhan.castro', 
+        sonarName:'''"CeibaADN-Casillero-Front-jhan.castro"''', 
         sonarPathProperties:'./sonar-project.properties')
     }
 } 

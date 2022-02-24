@@ -1,5 +1,6 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FilterLockerByTypePipe } from '@locker/shared/pipes/filter-locker-by-type.pipe';
 import { SaveComponent } from './save.component';
 
 describe('SaveComponent', () => {
@@ -9,7 +10,7 @@ describe('SaveComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports:[HttpClientTestingModule],
-      declarations: [ SaveComponent ]
+      declarations: [ SaveComponent,FilterLockerByTypePipe ]
     })
     .compileComponents();
   });

@@ -8,7 +8,7 @@ pipeline {
   //Opciones específicas de Pipeline dentro del Pipeline
   options {
     	buildDiscarder(logRotator(numToKeepStr: '3'))
- 	disableConcurrentBuilds()
+ 	    disableConcurrentBuilds()
   }
 
   //Una sección que define las herramientas “preinstaladas” en Jenkins
@@ -81,7 +81,7 @@ stage('Static Code Analysis') {
     }
     success {
       echo 'This will run only if successful'
-      junit allowEmptyResults:true, testResults: '**/test-results/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
+      junit allowEmptyResults:true, testResults: 'build/test-results/test/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
       }
     failure {
       echo 'This will run only if failed'

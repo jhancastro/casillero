@@ -29,21 +29,18 @@ module.exports = function (config) {
       fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml','junit'],
-    htmlReporter: {
-      outputFile: 'reports/unit/units.html'
-    },
-    junitReporter: {
-      outputDir: 'reports/unit',
-      outputFile: 'test-results.xml',
-      suite: '',
-      useBrowserName: false
-   },
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['ChromeHeadless'],
-    singleRun: false,
-    restartOnFileChange: true
+    singleRun: true,
+    restartOnFileChange: true,
+    junitReporter: {
+      outputDir: 'reports/unit',
+      outputFile: 'test-results.xml',
+      suite: '',
+      useBrowserName: false
+    }
   });
 };

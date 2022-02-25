@@ -81,7 +81,7 @@ stage('Static Code Analysis') {
     }
     success {
       echo 'This will run only if successful'
-      junit allowEmptyResults:true, testResults: 'build/test-results/test/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
+      junit '**/test-results/test/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
       }
     failure {
       echo 'This will run only if failed'

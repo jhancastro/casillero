@@ -29,18 +29,25 @@ module.exports = function (config) {
       fixWebpackSourcePaths: true
     },
     reporters: ['progress', 'kjhtml','junit'],
-    port: 9876,
-    colors: true,
-    logLevel: config.LOG_INFO,
-    autoWatch: true,
-    browsers: ['ChromeHeadless'],
-    singleRun: true,
-    restartOnFileChange: true,
+    htmlReporter: {
+      outputFile: 'reports/unit/units.html',
+
+      // Optional 
+      subPageTitle: 'Presentacion HTML de los test unitarios',
+      dir: 'reports/html/'
+    },
     junitReporter: {
       outputDir: 'reports/unit',
       outputFile: 'test-results.xml',
       suite: '',
       useBrowserName: false
-    }
+   },
+    port: 9876,
+    colors: true,
+    logLevel: config.LOG_INFO,
+    autoWatch: true,
+    browsers: ['Chrome'],
+    singleRun: false,
+    restartOnFileChange: true
   });
 };

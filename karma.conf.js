@@ -30,11 +30,7 @@ module.exports = function (config) {
     },
     reporters: ['progress', 'kjhtml','junit'],
     htmlReporter: {
-      outputFile: 'reports/unit/units.html',
-
-      // Optional 
-      subPageTitle: 'Presentacion HTML de los test unitarios',
-      dir: 'reports/html/'
+      outputFile: 'reports/unit/units.html'
     },
     junitReporter: {
       outputDir: 'reports/unit',
@@ -46,7 +42,7 @@ module.exports = function (config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: ['ChromeHeadless'],
     singleRun: false,
     restartOnFileChange: true
   });

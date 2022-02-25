@@ -81,9 +81,8 @@ stage('Static Code Analysis') {
     }
     success {
       echo 'This will run only if successful'
-      //junit 'build/test-results/test/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
-      junit '**/target/*.xml'
-    }
+      junit allowEmptyResults:true, testResults: '**/test-results/*.xml' //RUTA RELATIVA DE LOS ARCHIVOS .XML
+      }
     failure {
       echo 'This will run only if failed'
       mail (to: 'jhan.castro@ceiba.com.co',subject: "Failed Pipeline:${currentBuild.fullDisplayName}",body: "Something is wrong with ${env.BUILD_URL}")

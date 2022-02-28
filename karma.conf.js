@@ -37,7 +37,7 @@ module.exports = function (config) {
     singleRun: true,
     restartOnFileChange: true,
     junitReporter: {
-      outputDir: 'reports/unit',
+      outputDir: 'test-results',
       outputFile: 'test-results.xml',
       suite: '',
       useBrowserName: false

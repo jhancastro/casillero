@@ -28,7 +28,7 @@ export class AuthInterceptor implements HttpInterceptor {
             break;
           default:
             return throwError(error);
-        }
+        } return;
       })
     );
   }

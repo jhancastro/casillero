@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit{
       const resp = await this.loginService.login(this.formLogin.value);
       if (resp[0]?.token) {
         localStorage.setItem('token', resp.token);
-        await this.redirectUsers();
+        this.redirectUsers();
       }else{
         this.error = 'User/password incorrect';
       }
@@ -47,6 +47,7 @@ export class LoginComponent implements OnInit{
       this.error = 'User/password incorrect';
       return false;
     }
+    return;
   }
 
   public redirectUsers(): void {

@@ -16,7 +16,7 @@ export class SecurityGuard implements CanActivate {
     return true;
   }
 
-  validateToken(token: string) {
+  validateToken(token: string): any {
     if (!token){
       this.router.navigate(['/login']);
     }

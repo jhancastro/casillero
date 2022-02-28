@@ -12,7 +12,7 @@ import {LoginService} from './shared/login/login.service';
 export class LoginComponent implements OnInit{
   public formLogin: FormGroup;
   error = '';
-  minL = 8;
+  
 
   constructor(
     private readonly router: Router,
@@ -25,7 +25,7 @@ export class LoginComponent implements OnInit{
     this.formLogin = this.formBuilder.group(
       {
         email:['', [Validators.required]],
-        password:['',[Validators.required,Validators.minLength(this.minL)]]
+        password:['',[Validators.required]]
       });
 
     const token = localStorage.getItem('token');

@@ -12,17 +12,19 @@ export class AuthInterceptor implements HttpInterceptor {
 
   constructor(private router: Router) { }
 
-  intercept(req: HttpRequest<any>, next: HttpHandler):
-    Observable<HttpEvent<any>> {
+  intercept(req: HttpRequest<string>, next: HttpHandler):
+    Observable<HttpEvent<string>> {
 
     return next.handle(req).pipe(
       catchError(error => {
         switch (error.status) {
           case UNAUTHORIZED:
             this.router.navigate(['/login']);
+            return;
             break;
           case FORBIDDEN:
             this.router.navigate(['/home']);
+            return;
             break;
           default:
             return throwError(error);

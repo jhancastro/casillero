@@ -17,14 +17,14 @@ module.exports = function (config) {
       clearContext: false // leave Jasmine Spec Runner output visible in browser
     },
     remapIstanbulReporter: {
-      dir : 'reports/coverage/app-base',
+      dir : './reports/coverage/app-base',
       reports: {
         html: 'coverage',
-        lcovonly: 'reports/coverage/app-base/coverage.lcov'
+        lcovonly: './reports/coverage/app-base/coverage.lcov'
       }
     },
     coverageIstanbulReporter: {
-      dir: require('path').join(__dirname, 'reports/coverage/app-base'),
+      dir: require('path').join(__dirname, './reports/coverage/app-base'),
       reports: ['html', 'lcovonly', 'text-summary'],
       fixWebpackSourcePaths: true
     },

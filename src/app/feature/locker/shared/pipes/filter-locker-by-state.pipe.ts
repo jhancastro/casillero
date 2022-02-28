@@ -6,10 +6,9 @@ import { Iocupados } from '../model';
 })
 export class FilterLockerByStatePipe implements PipeTransform {
 
-  transform(data: Iocupados[], field : string, value : string) {
-    let retorno = [];
-    if (!data) return retorno;
-    if (!value || value.length === 0) {return data};
+  transform(data: Iocupados[], field : string, value : string): any[] {
+    if (!data) return [];
+    if (!value || value.length === 0) return data;
     return data.filter(key =>
       key[field]
         .toLowerCase()

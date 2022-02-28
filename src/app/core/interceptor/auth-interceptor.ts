@@ -12,8 +12,8 @@ export class AuthInterceptor implements HttpInterceptor {
 
   constructor(private router: Router) { }
 
-  intercept(req: HttpRequest<string>, next: HttpHandler):
-    Observable<HttpEvent<string>> {
+  intercept(req: HttpRequest<any>, next: HttpHandler):
+    Observable<HttpEvent<any>> {
 
     return next.handle(req).pipe(
       catchError(error => {
@@ -27,8 +27,7 @@ export class AuthInterceptor implements HttpInterceptor {
           default:
             return throwError(error);
         }
-        })
-      
-       );
+      })
+    );
   }
 }

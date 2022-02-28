@@ -20,16 +20,14 @@ export class AuthInterceptor implements HttpInterceptor {
         switch (error.status) {
           case UNAUTHORIZED:
             this.router.navigate(['/login']);
-            return;
             break;
           case FORBIDDEN:
             this.router.navigate(['/home']);
-            return;
             break;
           default:
             return throwError(error);
         } 
       })
     );
-    return; }
+   }
 }

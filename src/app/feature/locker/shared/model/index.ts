@@ -1,2 +1,2 @@
-export * from "./producto";
-export * from "./locker";
+export * from './producto';
+export * from './locker';

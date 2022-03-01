@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit{
         email:['', [Validators.required]],
         password:['',[Validators.required]]
       });
-    this.validateToken()
+    this.validateToken();
   }
 
   validateToken(){
@@ -63,7 +63,6 @@ export class LoginComponent implements OnInit{
   }
 
   getCurrentRouterPath(): Array<string> {
-    console.log(this.router.url.split('/').filter(path => path))
     return this.router.url.split('/').filter(path => path);
   }
 

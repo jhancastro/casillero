@@ -24,4 +24,10 @@ describe('SaveComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Debe validar Tipos de casilleros', () => {
+    component.ngOnInit()
+    expect(component.typeLocker).toBeUndefined();
+  });
+
 });

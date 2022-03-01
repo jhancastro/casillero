@@ -17,10 +17,16 @@ describe('SecurityGuard', () => {
     expect(guard).toBeTruthy();
   }));
 
-  it('debe validar Token...',inject([SecurityGuard], (guard: SecurityGuard) => {
+  it('debe validar con Token...',inject([SecurityGuard], (guard: SecurityGuard) => {
     guard.token = '123456789'
     const validator = guard.validateToken(guard.token);
     expect(validator).toBeTrue();
-  }
-  ));
+  }));
+
+  it('debe validar sin Token...',inject([SecurityGuard], (guard: SecurityGuard) => {
+    const validator = guard.validateToken(guard.token);
+    expect(validator).toBeFalse();
+  }));
+
+
 });

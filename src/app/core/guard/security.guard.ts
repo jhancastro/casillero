@@ -29,6 +29,7 @@ token: string;
   public logout() {
     localStorage.clear();
     this.router.navigate(['/login']);
+    return true;
   }
 
 }

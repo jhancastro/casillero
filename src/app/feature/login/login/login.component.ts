@@ -41,8 +41,10 @@ export class LoginComponent implements OnInit{
       if (resp[0]?.token) {
         localStorage.setItem('token', resp.token);
         this.redirectUsers();
+        return true;
       }else{
         this.error = 'User/password incorrect';
+        return false;
       }
     }catch (e) {
       this.error = 'User/password incorrect';

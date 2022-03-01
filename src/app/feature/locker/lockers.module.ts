@@ -1,7 +1,5 @@
 import { NgModule } from '@angular/core';
 import { LockersRoutingModule } from './lockers-routing.module';
-import { BorrarProductoComponent } from './components/borrar-producto/borrar-producto.component';
-import { CrearProductoComponent } from './components/crear-producto/crear-producto.component';
 import { LockerComponent } from './components/locker/locker.component';
 import { SharedModule } from '@shared/shared.module';
 import { ProductoService } from './shared/service/producto.service';
@@ -61,8 +59,6 @@ import { HttpService } from '@core/services/http.service';
 
 @NgModule({
   declarations: [
-    CrearProductoComponent,
-    BorrarProductoComponent,
     LockerComponent,
     SaveComponent,
     FilterLockerByTypePipe,
@@ -72,7 +68,6 @@ import { HttpService } from '@core/services/http.service';
       LockersRoutingModule,
         SharedModule,
         CoreModule,
-
         
     A11yModule,
     CdkAccordionModule,

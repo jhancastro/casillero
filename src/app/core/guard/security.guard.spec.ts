@@ -28,5 +28,18 @@ describe('SecurityGuard', () => {
     expect(validator).toBeFalse();
   }));
 
+  it('debe validar canActivate con Token...',inject([SecurityGuard], (guard: SecurityGuard) => {
+    guard.token = '123456789'
+    const validator = guard.canActivate();
+    expect(validator).toBeTrue();
+  }));
+
+  it('debe validar canActivate sin Token...',inject([SecurityGuard], (guard: SecurityGuard) => {
+    localStorage.setItem('token','null') 
+    const validator = guard.canActivate()
+    const token = guard.token
+    expect(token).toEqual('null') && expect(validator).toBeFalse();
+  }));
+
 
 });

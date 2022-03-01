@@ -27,6 +27,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatNativeDateModule,
     ReactiveFormsModule
      ],
+     exports:[LockersModule],
   providers: [CookieService],
     bootstrap: [AppComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA]

@@ -7,8 +7,12 @@ import { ItipoCasilleros } from '../model';
 export class FilterLockerByTypePipe implements PipeTransform {
 
   transform(data: ItipoCasilleros[], field : string, value : string) {
-    if (!data) {return [];}
-    if (!value || value.length === 0) {return data;}
+    if (!data) {
+      return [];
+    }
+    if (!value || value.length === 0) {
+      return data;
+    }
     return data.filter(key =>
       key[field]
         .toLowerCase()

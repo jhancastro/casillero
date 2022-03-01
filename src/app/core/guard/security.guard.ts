@@ -21,9 +21,9 @@ token: string;
   validateToken(token: string){
     if (!token){
       this.router.navigate(['/login']);
-      return false;
+      return true;
     }
-    return true;
+    return false;
   }
 
   public logout() {

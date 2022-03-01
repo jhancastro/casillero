@@ -26,8 +26,8 @@ describe('ToolbarComponent', () => {
   });
 
   it('Debe de remover item token', () => {
-    const token = localStorage.getItem('token');
     component.logout();
+    const token = localStorage.getItem('token');
     expect(token).toBeNull();
 
   });

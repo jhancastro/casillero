@@ -49,7 +49,7 @@ export class ToolbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  public logout(): void {
+  public logout() {
     localStorage.removeItem('token');
     this.router.navigateByUrl('/login');
     }

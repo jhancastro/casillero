@@ -11,15 +11,19 @@ export class SecurityGuard implements CanActivate {
 
   canActivate(): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
   // canActivate(): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-  //   const token = localStorage.getItem('token');
-  //   this.validateToken(token);
-    return true;
+     const token = localStorage.getItem('token');
+     if (this.validateToken(token)){
+      return true;
+     }
+     return false;
   }
 
   validateToken(token: string){
     if (!token){
       this.router.navigate(['/login']);
+      return false;
     }
+    return true;
   }
 
   public logout() {

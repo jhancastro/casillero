@@ -6,13 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SecurityGuard implements CanActivate {
+token: string;
   constructor(private router: Router) {
   }
 
   canActivate(): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
-  // canActivate(): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-     const token = localStorage.getItem('token');
-     if (this.validateToken(token)){
+     this.token = localStorage.getItem('token');
+     if (this.validateToken(this.token)){
       return true;
      }
      return false;

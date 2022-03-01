@@ -29,4 +29,11 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('Debe de validar token', () => {
+    const validador = component.validateToken()
+    expect(validador).toBeFalse();
+  });
+
+
 });

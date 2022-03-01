@@ -8,7 +8,7 @@ import {MenuItem} from '@core/modelo/menu-item';
 })
 export class HomeComponent implements OnInit {
   public companies: MenuItem[] = [
-    { url: '/config', nombre: 'Configuración' },
+    { url: '/home', nombre: 'Configuración' },
     { url: '/save', nombre: 'Gestionar' }
   ];
 

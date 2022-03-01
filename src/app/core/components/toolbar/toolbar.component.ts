@@ -50,9 +50,9 @@ export class ToolbarComponent implements OnInit {
   }
 
   public logout(): void {
-    this.router.navigateByUrl('/login');
     localStorage.removeItem('token');
-  }
+    this.router.navigateByUrl('/login');
+    }
 
 
 }

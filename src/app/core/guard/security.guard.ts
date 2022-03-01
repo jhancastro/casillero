@@ -11,11 +11,11 @@ token: string;
   }
 
   canActivate(): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
-     this.token = localStorage.getItem('token');
-     if (this.validateToken(this.token)){
+     //this.token = localStorage.getItem('token');
+     //if (this.validateToken(this.token)){
       return true;
-     }
-     return false;
+    // }
+    // return false;
   }
 
   validateToken(token: string){

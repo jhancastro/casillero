@@ -28,10 +28,10 @@ export class SaveComponent implements OnInit {
   onCollect(data: Icasilleros, tipo: string){
     if (data.estado === 'ocupado'){
           if (tipo === 'sencillo'){
-            var locker = this.typeLocker.filter(r=>r.tipo==='sencillo');
+            let locker = this.typeLocker.filter(r=>r.tipo==='sencillo');
             data.valorHora = locker[0].valorHora;
           }else{
-            var locker = this.typeLocker.filter(r=>r.tipo==='doble');
+            let locker = this.typeLocker.filter(r=>r.tipo==='doble');
             data.valorHora = locker[0].valorHora;
           }
             const winCollect = this.dialog.open(CollectComponent, {

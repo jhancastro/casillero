@@ -1,34 +1,100 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 98.0.4758.102 (Windows 10)" package="" timestamp="2022-03-01T05:27:19" id="0" hostname="JHAN-CASTRO" tests="21" errors="0" failures="0" time="0.125">
+<testsuite name="Chrome Headless 98.0.4758.102 (Windows 10)" package="" timestamp="2022-03-02T05:11:14" id="0" hostname="JHAN-CASTRO" tests="30" errors="0" failures="0" time="0.18">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/98.0.4758.102 Safari/537.36"/>
   </properties>
-  <testcase name="ToolbarComponent should create" time="0.03" classname="ToolbarComponent"/>
-  <testcase name="AppComponent should have as title 'app-base'" time="0.007" classname="AppComponent"/>
-  <testcase name="AppComponent should create the app" time="0.004" classname="AppComponent"/>
-  <testcase name="FilterLockerByStatePipe create an instance" time="0" classname="FilterLockerByStatePipe"/>
+  <testcase name="LockerComponent should create" time="0.03" classname="LockerComponent"/>
+  <testcase name="FilterLockerByTypePipe debe retornar data filtrada" time="0.001" classname="FilterLockerByTypePipe"/>
   <testcase name="FilterLockerByTypePipe create an instance" time="0" classname="FilterLockerByTypePipe"/>
-  <testcase name="LockerComponent should create" time="0.009" classname="LockerComponent"/>
-  <testcase name="SaveComponent should create" time="0.016" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe validar Tipos de casilleros" time="0.004" classname="SaveComponent"/>
-  <testcase name="SecurityGuard should ..." time="0.001" classname="SecurityGuard"/>
+  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega criterio" time="0.001" classname="FilterLockerByTypePipe"/>
+  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega casillero doble" time="0" classname="FilterLockerByTypePipe"/>
+  <testcase name="CollectComponent should create" time="0.012" classname="CollectComponent"/>
+  <testcase name="CollectComponent Debe de retornar un valor no valido de cobro" time="0.003" classname="CollectComponent"/>
+  <testcase name="ProductoService deberia crear un producto" time="0.003" classname="ProductoService"/>
+  <testcase name="ProductoService deberia listar productos" time="0.001" classname="ProductoService"/>
+  <testcase name="ProductoService deberia eliminar un producto" time="0.001" classname="ProductoService"/>
+  <testcase name="ProductoService should be created" time="0.001" classname="ProductoService"/>
+  <testcase name="SaveComponent Debe abrir ventana para cobro" time="0.015" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe validar Tipos de casilleros" time="0.003" classname="SaveComponent"/>
+  <testcase name="SaveComponent should create" time="0.002" classname="SaveComponent"/>
+  <testcase name="LoginService Deberia retornar token (login correcto)" time="0.003" classname="LoginService"/>
+  <testcase name="LoginService Debe de crearse correctamente" time="0" classname="LoginService"/>
+  <testcase name="LockerService should be created" time="0.002" classname="LockerService"/>
+  <testcase name="NavbarComponent should create" time="0.005" classname="NavbarComponent"/>
+  <testcase name="ToolbarComponent Debe de remover item token" time="0.007" classname="ToolbarComponent"/>
+  <testcase name="ToolbarComponent should create" time="0.008" classname="ToolbarComponent"/>
+  <testcase name="LoginComponent Debe de validar redirectUsers /home" time="0.031" classname="LoginComponent"/>
+  <testcase name="LoginComponent should create" time="0.011" classname="LoginComponent"/>
+  <testcase name="LoginComponent Debe de validar token" time="0.008" classname="LoginComponent"/>
   <testcase name="SecurityGuard debe validar sin Token..." time="0.003" classname="SecurityGuard"/>
   <testcase name="SecurityGuard debe validar con Token..." time="0.002" classname="SecurityGuard"/>
-  <testcase name="HomeComponent should create" time="0.004" classname="HomeComponent"/>
-  <testcase name="NavbarComponent should create" time="0.006" classname="NavbarComponent"/>
-  <testcase name="ErrorCamposPlantillaComponent should create" time="0.005" classname="ErrorCamposPlantillaComponent"/>
-  <testcase name="LoginService Debe de crearse correctamente" time="0.001" classname="LoginService"/>
-  <testcase name="LoginComponent should create" time="0.02" classname="LoginComponent"/>
-  <testcase name="ProductoService should be created" time="0.003" classname="ProductoService"/>
-  <testcase name="ProductoService deberia crear un producto" time="0.004" classname="ProductoService"/>
-  <testcase name="ProductoService deberia listar productos" time="0.002" classname="ProductoService"/>
-  <testcase name="ProductoService deberia eliminar un producto" time="0.002" classname="ProductoService"/>
-  <testcase name="LockerService should be created" time="0.002" classname="LockerService"/>
+  <testcase name="SecurityGuard should ..." time="0.002" classname="SecurityGuard"/>
+  <testcase name="HomeComponent should create" time="0.006" classname="HomeComponent"/>
+  <testcase name="ErrorCamposPlantillaComponent should create" time="0.006" classname="ErrorCamposPlantillaComponent"/>
+  <testcase name="AppComponent should create the app" time="0.008" classname="AppComponent"/>
+  <testcase name="AppComponent should have as title 'app-base'" time="0.005" classname="AppComponent"/>
   <system-out>
     <![CDATA[Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element:
 1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
 2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0303: Can't bind to 'items' since it isn't a known property of 'app-navbar'.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
+1. If 'mat-card' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element:
+1. If 'mat-card-header' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element:
+1. If 'mat-card-title' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element:
+1. If 'mat-card-content' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
+1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
+1. If 'mat-card' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element:
+1. If 'mat-card-header' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element:
+1. If 'mat-card-title' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element:
+1. If 'mat-card-content' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
+1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-tab-group' is not a known element:
+1. If 'mat-tab-group' is an Angular component, then verify that it is part of this module.
+2. If 'mat-tab-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-tab' is not a known element:
+1. If 'mat-tab' is an Angular component, then verify that it is part of this module.
+2. If 'mat-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-chip-list' is not a known element:
+1. If 'mat-chip-list' is an Angular component, then verify that it is part of this module.
+2. If 'mat-chip-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-tab' is not a known element:
+1. If 'mat-tab' is an Angular component, then verify that it is part of this module.
+2. If 'mat-tab' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-chip-list' is not a known element:
+1. If 'mat-chip-list' is an Angular component, then verify that it is part of this module.
+2. If 'mat-chip-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'mat-tab-group' is not a known element:
 1. If 'mat-tab-group' is an Angular component, then verify that it is part of this module.
 2. If 'mat-tab-group' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
@@ -81,11 +147,57 @@ Error: Cannot match any routes. URL Segment: 'login'
     at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
     at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
     at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
+,Chrome Headless 98.0.4758.102 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'home'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'home'
+Error: Cannot match any routes. URL Segment: 'home'
+    at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
+    at CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/operators/catchError.js:27:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1), 'Error: Cannot match any routes. URL Segment: 'home'
+    at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
+    at CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/operators/catchError.js:27:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
+,Chrome Headless 98.0.4758.102 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 98.0.4758.102 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'login'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'login'
+Error: Cannot match any routes. URL Segment: 'login'
+    at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
+    at CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/operators/catchError.js:27:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1), 'Error: Cannot match any routes. URL Segment: 'login'
+    at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
+    at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
+    at CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/operators/catchError.js:27:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
+    at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
+    at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
 ,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element:
 1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
 2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 ,Chrome Headless 98.0.4758.102 (Windows 10) ERROR: 'NG0303: Can't bind to 'items' since it isn't a known property of 'app-navbar'.'
-,Chrome Headless 98.0.4758.102 (Windows 10) WARN: 'Spec 'LoginService Debe de crearse correctamente' has no expectations.'
 
 ]]>
   </system-out>

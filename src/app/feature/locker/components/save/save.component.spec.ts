@@ -36,4 +36,23 @@ describe('SaveComponent', () => {
     expect(component.typeLocker).toBeUndefined();
   });
 
+  it('Debe abrir ventana para cobro', () => {
+    const casillero = {
+      id:1,
+      estado:'libre',
+      placa:'FTH65B',
+      nombre:'Juan Vargas',
+      telefono:'3041447671',
+      ingreso:'2022-03-01 09:28:58'
+    }
+    component.typeLocker = [{
+      id:1,
+      tipo:'sencillo',
+      valorHora:1000,
+      cantidad:50
+    }];
+    expect(component.onCollect(casillero,'sencillo')).toBeFalse()
+  });
+
+
 });

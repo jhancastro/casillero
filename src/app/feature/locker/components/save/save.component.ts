@@ -47,7 +47,7 @@ export class SaveComponent implements OnInit {
               });
       
     }else{
-      return;
+      return false;
     }
   }
 

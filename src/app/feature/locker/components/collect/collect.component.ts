@@ -27,7 +27,7 @@ export class CollectComponent implements OnInit {
     const fecha2 = moment(this.fechaHoraFin, 'YYYY-MM-DD hh:mm:ss');
     const diff = fecha2.diff(fecha1, 'm'); 
     this.minutos = diff;
-    const minutosHora = 60
+    const minutosHora = 60;
     this.cobro = +((diff* +this.locker.valorHora)/minutosHora).toFixed(0);
   }
 }

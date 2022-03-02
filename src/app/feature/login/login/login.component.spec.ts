@@ -47,16 +47,15 @@ describe('LoginComponent', () => {
   });
 
   it('Debe de validar token', () => {
-    const validador = component.validateToken()
+    const validador = component.validateToken();
     expect(validador).toBeFalse();
   });
 
   it('Debe de validar redirectUsers /home', () => {
-  component.redirectUsers()
+  component.redirectUsers();
   const arrayPath = component.getCurrentRouterPath();
   expect(arrayPath).not.toBeNull();
-  expect(arrayPath).not.toBeUndefined();
-  
+  expect(arrayPath).not.toBeUndefined();  
   });
 
 

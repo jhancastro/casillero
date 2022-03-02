@@ -30,7 +30,7 @@ describe('CollectComponent', () => {
 
   it('Debe de retornar un valor no valido de cobro', () => {
     component.ngOnInit();
-    expect(component.cobro).toEqual(NaN)
+    expect(component.cobro).toEqual(NaN);
   });
 
 

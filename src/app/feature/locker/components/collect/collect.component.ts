@@ -22,11 +22,12 @@ export class CollectComponent implements OnInit {
   }
 
   realizarCobro(){
-    this.fechaHoraFin =  moment(new Date()).format("YYYY-MM-DD hh:mm:ss");
-    const fecha1 = moment(this.locker.ingreso, "YYYY-MM-DD hh:mm:ss");
-    const fecha2 = moment(this.fechaHoraFin, "YYYY-MM-DD hh:mm:ss");
+    this.fechaHoraFin =  moment(new Date()).format('YYYY-MM-DD hh:mm:ss');
+    const fecha1 = moment(this.locker.ingreso, 'YYYY-MM-DD hh:mm:ss');
+    const fecha2 = moment(this.fechaHoraFin, 'YYYY-MM-DD hh:mm:ss');
     const diff = fecha2.diff(fecha1, 'm'); 
     this.minutos = diff;
-    this.cobro = +((diff* +this.locker.valorHora)/60).toFixed(0);
+    const minutosHora = 60
+    this.cobro = +((diff* +this.locker.valorHora)/minutosHora).toFixed(0);
   }
 }

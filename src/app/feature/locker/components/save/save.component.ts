@@ -34,10 +34,12 @@ export class SaveComponent implements OnInit {
             let locker = this.typeLocker.filter(r=>r.tipo==='doble');
             data.valorHora = locker[0].valorHora;
           }
-            const winCollect = this.dialog.open(CollectComponent, {
-              data:  data,
+            const winCollect = this.dialog.open(
+              CollectComponent, 
+              { data,
               disableClose: false, height:'60%',width:'35%'
-            });
+              }
+            );
             winCollect.afterClosed().subscribe(result => {
               if (result?.length === 0) {
                 return;

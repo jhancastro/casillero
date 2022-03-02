@@ -54,13 +54,15 @@ import {OverlayModule} from '@angular/cdk/overlay';
 import { LockerService } from './shared/service/locker.service';
 import { FilterLockerByTypePipe } from './shared/pipes/filter-locker-by-type.pipe';
 import { HttpService } from '@core/services/http.service';
+import { CollectComponent } from './components/collect/collect.component';
 
 
 @NgModule({
   declarations: [
     LockerComponent,
     SaveComponent,
-    FilterLockerByTypePipe
+    FilterLockerByTypePipe,
+    CollectComponent
   ],
     imports: [
       LockersRoutingModule,

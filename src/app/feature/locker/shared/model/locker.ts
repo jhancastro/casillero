@@ -18,4 +18,5 @@ export interface Icasilleros{
     nombre: string;
     telefono: string;
     ingreso: string;
+    valorHora?: number;
 }

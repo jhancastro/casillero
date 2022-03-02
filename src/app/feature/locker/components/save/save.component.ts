@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { LockerService } from '@locker/shared/service/locker.service';
+import { CollectComponent } from '../collect/collect.component';
 import { Icasilleros, ItipoCasilleros }  from './../../shared/model';
 
 @Component({
@@ -13,6 +15,7 @@ export class SaveComponent implements OnInit {
 
   constructor(
     protected lockerService : LockerService,
+    public dialog: MatDialog
   ) { }
 
   async ngOnInit() {
@@ -20,6 +23,29 @@ export class SaveComponent implements OnInit {
     this.sencillos = await this.lockerService.getParrillaCasilleros('sencillos').toPromise();
     this.dobles = await this.lockerService.getParrillaCasilleros('dobles').toPromise();
     
+  }
+
+  onCollect(data: Icasilleros, tipo: string){
+    if (data.estado === 'ocupado'){
+          if (tipo === 'sencillo'){
+            var locker = this.typeLocker.filter(r=>r.tipo==='sencillo');
+            data.valorHora = locker[0].valorHora;
+          }else{
+            var locker = this.typeLocker.filter(r=>r.tipo==='doble');
+            data.valorHora = locker[0].valorHora;
+          }
+            const winCollect = this.dialog.open(CollectComponent, {
+              data:  data,
+              disableClose: false, height:'60%',width:'35%'
+            });
+            winCollect.afterClosed().subscribe(result => {
+              if (result?.length === 0) {
+                return;
+              }
+              });
+    }else{
+      return;
+    }
   }
 
 }

@@ -1,5 +1,5 @@
 <mat-tab-group>
-    <mat-tab label="Casilleros Secillos" style="overflow-x: hidden;"> 
+    <mat-tab label="Casilleros Secillos" class="tabp"> 
         <div> 
         <mat-chip-list aria-label="Fish selection">
             <mat-chip color="primary" selected *ngFor="let item of typeLocker | filterLockerByType:'tipo':'sencillo'; let i = index">
@@ -8,7 +8,6 @@
             </mat-chip>
           </mat-chip-list>
         </div>
-
         <div >
             <form  class="forma">
               <div  *ngFor="let x of sencillos; let i = index" class="tarjeta">
@@ -27,14 +26,15 @@
                         {{x.estado}}
                       </p>
                     </mat-card-content>
-                    <mat-card-actions style="width: 100%">
+                    <mat-card-actions class="card1">
                       <button
                         mat-button
-                        style="background-color: #1ba1b8;width: 110%">
+                        class="boton1"
+                        (click)="onCollect(x,'sencillo')"
+                        >
                       <mat-icon *ngIf="x.estado === 'ocupado'">payment</mat-icon>
                       <mat-icon *ngIf="x.estado !== 'ocupado'">pan_tool</mat-icon>
                     </button>
-                      
                     </mat-card-actions>
                   </mat-card>
               </div>
@@ -67,14 +67,15 @@
                             {{x.estado}}
                           </p>
                         </mat-card-content>
-                        <mat-card-actions style="width: 100%">
+                        <mat-card-actions class="card1">
                           <button
                             mat-button
-                            style="background-color: #1ba1b8;width: 110%">
+                            class="boton1"
+                            (click)="onCollect(x,'doble')"
+                            >
                             <mat-icon *ngIf="x.estado === 'ocupado'">payment</mat-icon>
                             <mat-icon *ngIf="x.estado !== 'ocupado'">pan_tool</mat-icon>
                         </button>
-                          
                         </mat-card-actions>
                       </mat-card>
                   </div>

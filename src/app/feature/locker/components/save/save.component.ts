@@ -19,11 +19,14 @@ export class SaveComponent implements OnInit {
   ) { }
 
   async ngOnInit() {
+    this.onchargueData();
+   }
+
+   async onchargueData(){
     this.typeLocker = await this.lockerService.getCasilleros().toPromise();
     this.sencillos = await this.lockerService.getParrillaCasilleros('sencillos').toPromise();
     this.dobles = await this.lockerService.getParrillaCasilleros('dobles').toPromise();
-    
-  }
+   }
 
   onCollect(data: Icasilleros, tipo: string){
     if (data.estado === 'ocupado'){

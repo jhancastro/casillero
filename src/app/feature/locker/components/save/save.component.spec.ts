@@ -53,6 +53,13 @@ describe('SaveComponent', () => {
     }];
     expect(component.onCollect(casillero,'sencillo')).toBeFalse()
   });
+  
+  it('Debe Cargar data inicial', () => {
+    component.ngOnInit()
+    expect(component.typeLocker).toBeUndefined();
+    expect(component.sencillos).toBeUndefined();
+    expect(component.dobles).toBeUndefined();
+  });
 
 
 });

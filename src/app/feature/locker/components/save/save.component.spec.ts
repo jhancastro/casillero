@@ -1,7 +1,9 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FilterLockerByTypePipe } from '@locker/shared/pipes/filter-locker-by-type.pipe';
 import { SaveComponent } from './save.component';
+import { MatDialog } from '@angular/material/dialog';
 
 describe('SaveComponent', () => {
   let component: SaveComponent;
@@ -10,7 +12,11 @@ describe('SaveComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports:[HttpClientTestingModule],
-      declarations: [ SaveComponent,FilterLockerByTypePipe ]
+      declarations: [ SaveComponent,FilterLockerByTypePipe ],
+      providers: [
+        { provide: MAT_DIALOG_DATA, useValue: {} },
+        { provide: MatDialog, useValue: {} }
+    ]
     })
     .compileComponents();
   });

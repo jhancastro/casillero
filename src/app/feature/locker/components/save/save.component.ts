@@ -45,15 +45,8 @@ export class SaveComponent implements OnInit {
               }
             );
             winCollect.afterClosed()
-            .subscribe(result => {
-              if (result) {
-              
-              }
-              });
+            .subscribe();
 
-    }else{
-   
     }
   }
-
 }

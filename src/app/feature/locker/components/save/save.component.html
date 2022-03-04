@@ -1,85 +1,91 @@
 <mat-tab-group>
-    <mat-tab label="Casilleros Secillos" class="tabp"> 
-        <div> 
-        <mat-chip-list aria-label="Fish selection">
-            <mat-chip color="primary" selected *ngFor="let item of typeLocker | filterLockerByType:'tipo':'sencillo'; let i = index">
-                <mat-icon>person</mat-icon>
-                Total Casilleros  {{item.cantidad}}  Valor por Hora : <mat-icon> attach_money</mat-icon>{{item.valorHora}} 
-            </mat-chip>
-          </mat-chip-list>
+  <mat-tab label="Casilleros Secillos" class="tabp">
+    <div>
+      <mat-chip-list aria-label="Fish selection">
+        <mat-chip color="primary" selected
+                  *ngFor="let item of typeLocker | filterLockerByType:'tipo':'sencillo'; let i = index">
+          <mat-icon>person</mat-icon>
+          Total Casilleros {{item.cantidad}} Valor por Hora :
+          <mat-icon> attach_money</mat-icon>
+          {{item.valorHora}}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+    <div>
+      <form class="forma">
+        <div *ngFor="let x of sencillos; let i = index" class="tarjeta">
+          <mat-card>No. {{x.id}}
+            <mat-card-header>
+              <div mat-card-avatar>
+                <mat-icon *ngIf="x.estado === 'ocupado'">person</mat-icon>
+                {{x.placa}}
+              </div>
+              <mat-card-title>
+              </mat-card-title>
+            </mat-card-header>
+            <div mat-card-image></div>
+            <mat-card-content>
+              <p>
+                {{x.estado}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions class="card1">
+              <button
+                mat-button
+                class="boton1"
+                (click)="onCollect(x,'sencillo')"
+              >
+                <mat-icon *ngIf="x.estado === 'ocupado'">payment</mat-icon>
+                <mat-icon *ngIf="x.estado !== 'ocupado'">pan_tool</mat-icon>
+              </button>
+            </mat-card-actions>
+          </mat-card>
         </div>
-        <div >
-            <form  class="forma">
-              <div  *ngFor="let x of sencillos; let i = index" class="tarjeta">
-                  <mat-card>No. {{x.id}}
-                    <mat-card-header>
-                      <div mat-card-avatar>
-                        <mat-icon *ngIf="x.estado === 'ocupado'">person</mat-icon>
-                        {{x.placa}}
-                      </div>
-                      <mat-card-title>
-                      </mat-card-title>
-                    </mat-card-header>
-                    <div mat-card-image></div>
-                    <mat-card-content>
-                      <p>
-                        {{x.estado}}
-                      </p>
-                    </mat-card-content>
-                    <mat-card-actions class="card1">
-                      <button
-                        mat-button
-                        class="boton1"
-                        (click)="onCollect(x,'sencillo')"
-                        >
-                      <mat-icon *ngIf="x.estado === 'ocupado'">payment</mat-icon>
-                      <mat-icon *ngIf="x.estado !== 'ocupado'">pan_tool</mat-icon>
-                    </button>
-                    </mat-card-actions>
-                  </mat-card>
+      </form>
+    </div>
+  </mat-tab>
+  <mat-tab label="Casilleros Dobles">
+    <div>
+      <mat-chip-list aria-label="Fish selection">
+        <mat-chip color="primary" selected
+                  *ngFor="let item of typeLocker | filterLockerByType:'tipo':'doble'; let i = index">
+          <mat-icon>people</mat-icon>
+          Total Casilleros {{item.cantidad}} Valor por Hora :
+          <mat-icon> attach_money</mat-icon>
+          {{item.valorHora}}
+        </mat-chip>
+      </mat-chip-list>
+    </div>
+    <div>
+      <form class="forma">
+        <div *ngFor="let x of dobles; let i = index" class="tarjeta">
+          <mat-card>No. {{x.id}}
+            <mat-card-header>
+              <div mat-card-avatar>
+                <mat-icon *ngIf="x.estado === 'ocupado'">people</mat-icon>
+                {{x.placa}}
               </div>
-            </form>
-          </div>
-         </mat-tab>
-    <mat-tab label="Casilleros Dobles"> 
-        <div>
-            <mat-chip-list aria-label="Fish selection">
-                <mat-chip color="primary" selected *ngFor="let item of typeLocker | filterLockerByType:'tipo':'doble'; let i = index">
-                    <mat-icon>people</mat-icon>
-                    Total Casilleros {{item.cantidad}}  Valor por Hora : <mat-icon> attach_money</mat-icon>{{item.valorHora}}
-                </mat-chip>
-              </mat-chip-list>
-            </div>
-            <div >
-                <form  class="forma">
-                  <div  *ngFor="let x of dobles; let i = index" class="tarjeta">
-                    <mat-card>No. {{x.id}}
-                        <mat-card-header>
-                          <div mat-card-avatar>
-                            <mat-icon *ngIf="x.estado === 'ocupado'">people</mat-icon>
-                            {{x.placa}}
-                          </div>
-                          <mat-card-title></mat-card-title>
-                        </mat-card-header>
-                        <div mat-card-image></div>
-                        <mat-card-content>
-                          <p>
-                            {{x.estado}}
-                          </p>
-                        </mat-card-content>
-                        <mat-card-actions class="card1">
-                          <button
-                            mat-button
-                            class="boton1"
-                            (click)="onCollect(x,'doble')"
-                            >
-                            <mat-icon *ngIf="x.estado === 'ocupado'">payment</mat-icon>
-                            <mat-icon *ngIf="x.estado !== 'ocupado'">pan_tool</mat-icon>
-                        </button>
-                        </mat-card-actions>
-                      </mat-card>
-                  </div>
-                </form>
-              </div>
-         </mat-tab>
-  </mat-tab-group>
+              <mat-card-title></mat-card-title>
+            </mat-card-header>
+            <div mat-card-image></div>
+            <mat-card-content>
+              <p>
+                {{x.estado}}
+              </p>
+            </mat-card-content>
+            <mat-card-actions class="card1">
+              <button
+                mat-button
+                class="boton1"
+                (click)="onCollect(x,'doble')"
+              >
+                <mat-icon *ngIf="x.estado === 'ocupado'">payment</mat-icon>
+                <mat-icon *ngIf="x.estado !== 'ocupado'">pan_tool</mat-icon>
+              </button>
+            </mat-card-actions>
+          </mat-card>
+        </div>
+      </form>
+    </div>
+  </mat-tab>
+</mat-tab-group>

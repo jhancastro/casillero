@@ -1,11 +1,11 @@
-<div class="justify-content-center align-items-center div-card" style="margin-top: 7%;" >
-  <div class="card" >
+<div class="justify-content-center align-items-center div-card" style="margin-top: 7%;">
+  <div class="card">
     <h4 class="card-header-mod">LOGIN</h4>
     <div class="card-body layout-column justify-content-center align-items-center card-personal">
-      <form [formGroup]="formLogin" >
+      <form [formGroup]="formLogin">
         <div class="form-group text-end">
           <label for="login__email" class="label-login">Email</label>
-          <input class="input-login" type="text" id="login__email" formControlName="email" />
+          <input class="input-login" type="text" id="login__email" formControlName="email"/>
           <div class="text-end" *ngIf="formLogin.controls.email.invalid">
             <div *ngIf="formLogin.controls.email.errors.required">
               <span id="login__email-error" class="label-error">Email is required</span>
@@ -14,11 +14,12 @@
         </div>
         <div class="form-group text-end">
           <label for="login__password" class="label-login">Password</label>
-          <input id="login__password" class="input-login" type="password"  formControlName="password"/>
-          <div *ngIf="formLogin.controls.password.errors" >
-            <div id="login__password-error" class="text-end label-error" *ngIf="formLogin.controls.password.errors.required || formLogin.controls.password.value.length < 8">
+          <input id="login__password" class="input-login" type="password" formControlName="password"/>
+          <div *ngIf="formLogin.controls.password.errors">
+            <div id="login__password-error" class="text-end label-error"
+                 *ngIf="formLogin.controls.password.errors.required || formLogin.controls.password.value.length < 8">
               Password is required
-              <div  class="text-end label-error" *ngIf="formLogin.controls.password.value.length < 8">
+              <div class="text-end label-error" *ngIf="formLogin.controls.password.value.length < 8">
                 The minimum of characters will be 8
               </div>
             </div>

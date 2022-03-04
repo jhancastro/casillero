@@ -20,6 +20,7 @@ export class SaveComponent implements OnInit {
 
   async ngOnInit() {
     this.onchargueData();
+
    }
 
    async onchargueData(){
@@ -38,7 +39,7 @@ export class SaveComponent implements OnInit {
             data.valorHora = locker[0].valorHora;
           }
             const winCollect = this.dialog.open(
-              CollectComponent, 
+              CollectComponent,
               { data,
               disableClose: false, height:'60%',width:'35%'
               }
@@ -48,7 +49,7 @@ export class SaveComponent implements OnInit {
                 return;
               }
               });
-   
+
     }else{
       return false;
     }

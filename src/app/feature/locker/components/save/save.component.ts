@@ -44,8 +44,9 @@ export class SaveComponent implements OnInit {
               disableClose: false, height:'60%',width:'35%'
               }
             );
-            winCollect.afterClosed().subscribe(result => {
-              if (result?.length === 0) {
+            winCollect.afterClosed()
+            .subscribe(result => {
+              if (result) {
                 return;
               }
               });

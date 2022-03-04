@@ -1,3 +1,4 @@
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { TestBed, inject } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
@@ -8,7 +9,8 @@ describe('SecurityGuard', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      providers: [SecurityGuard]
+      providers: [SecurityGuard],
+      schemas:[NO_ERRORS_SCHEMA]
     });
     
   });

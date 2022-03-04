@@ -4,6 +4,7 @@ import { LockerComponent } from './locker.component';
 import { CommonModule } from '@angular/common';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('LockerComponent', () => {
   let component: LockerComponent;
@@ -17,6 +18,7 @@ describe('LockerComponent', () => {
         HttpClientTestingModule,
         RouterTestingModule
       ],
+      schemas:[NO_ERRORS_SCHEMA]
     })
     .compileComponents();
   }));

@@ -47,12 +47,12 @@ export class SaveComponent implements OnInit {
             winCollect.afterClosed()
             .subscribe(result => {
               if (result) {
-                return;
+              
               }
               });
 
     }else{
-      return false;
+   
     }
   }
 

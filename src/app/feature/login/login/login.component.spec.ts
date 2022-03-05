@@ -46,12 +46,13 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-/*
+
   it('Debe de validar token', () => {
+    localStorage.setItem('1234567876','token')
     const validador = component.validateToken();
-    expect(validador).toBeFalse();
+    expect(validador).toBeTrue();
   });
-*/
+
   it('Debe de validar login exitoso', () => {
     spyOn(component.loginService,'loginUser').and.callFake(()=>of(
         {

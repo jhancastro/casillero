@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit{
   }
 
   login( ) {
-   const data = this.formLogin.value
+   const data = this.formLogin.value;
    this.loginService.loginUser(data).subscribe(
      resp => {
       if (resp[0]?.token || resp?.token ) {

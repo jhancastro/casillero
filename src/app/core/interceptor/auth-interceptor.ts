@@ -21,11 +21,11 @@ export class AuthInterceptor implements HttpInterceptor {
       catchError(error => {
         switch (error.status) {
           case UNAUTHORIZED:
-            const urlLogin = '/login'
+            const urlLogin = '/login';
             this.router.navigate([urlLogin]);
             break;
           case FORBIDDEN:
-            const urlHome = '/home'
+            const urlHome = '/home';
             this.router.navigate([urlHome]);
             break;
           default:

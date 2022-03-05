@@ -51,17 +51,7 @@ describe('LoginComponent', () => {
     const validador = component.validateToken();
     expect(validador).toBeTrue();
   });
-
-  it('Debe de validar redirectUsers /home', () => {
-  component.redirectUsers();
-  const arrayPath = component.getCurrentRouterPath();
-  expect(arrayPath).not.toBeNull();
-  expect(arrayPath).not.toBeUndefined();  
-  });
-
   it('Debe de validar login exitoso', () => {
-      
-    
     spyOn(component.loginService,'loginUser').and.callFake(()=>of(
         {
             id: 1,
@@ -76,12 +66,7 @@ describe('LoginComponent', () => {
     email.setValue('jhancas@gmail.com');
     password.setValue('12345678');
     //expect(component.loginService.loginUser(component.formLogin.value)).toBeTrue();
-    component.login()
+    component.login();
     expect(component.token).toBe('qawsedrftgyhuj');
   });
-  
-    
-
-
-
 });

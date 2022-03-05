@@ -47,21 +47,14 @@ export class LoginComponent implements OnInit{
       if (resp[0]?.token || resp?.token ) {
         localStorage.setItem('token', resp.token);
         this.token =  resp.token;
-        this.redirectUsers();
         return true;
       }else{
         this.error = 'User/password incorrect';
         return false;
       }
      }
-   )
+   );
 }
-
-
-  public redirectUsers() {
-   // this.router.navigateByUrl('/home');
-  }
-
   getCurrentRouterPath(): Array<string> {
     return this.router.url.split('/').filter(path => path);
   }

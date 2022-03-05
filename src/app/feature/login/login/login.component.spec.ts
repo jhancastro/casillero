@@ -1,9 +1,13 @@
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
+import { of } from 'rxjs';
 import { LoginComponent } from './login.component';
+import {LoginService} from './shared/login/login.service';
+
 
 const testUrl = '/home';
 describe('LoginComponent', () => {
@@ -19,14 +23,11 @@ describe('LoginComponent', () => {
          ReactiveFormsModule
         ],
       declarations: [ LoginComponent ],
-      providers:[
+      providers:[LoginService,
         { 
-          provide: RouterTestingModule, 
-          useValue: {
-            url: testUrl 
-          } 
+          provide: RouterTestingModule, useValue: {url: testUrl } 
         }
-      ]
+      ],schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();
     activateRoute = TestBed.inject(ActivatedRoute);
@@ -48,7 +49,7 @@ describe('LoginComponent', () => {
 
   it('Debe de validar token', () => {
     const validador = component.validateToken();
-    expect(validador).toBeFalse();
+    expect(validador).toBeTrue();
   });
 
   it('Debe de validar redirectUsers /home', () => {
@@ -57,6 +58,30 @@ describe('LoginComponent', () => {
   expect(arrayPath).not.toBeNull();
   expect(arrayPath).not.toBeUndefined();  
   });
+
+  it('Debe de validar login exitoso', () => {
+      
+    
+    spyOn(component.loginService,'loginUser').and.callFake(()=>of(
+        {
+            id: 1,
+            email: 'jhancas@gmail.com',
+            password: '12345678',
+            token: 'qawsedrftgyhuj'
+        }
+     ));
+    
+    const email = component.formLogin.controls['email']; 
+    const password = component.formLogin.controls['password'];
+    email.setValue('jhancas@gmail.com');
+    password.setValue('12345678');
+    //expect(component.loginService.loginUser(component.formLogin.value)).toBeTrue();
+    component.login(component.formLogin.value)
+    expect(component.token).toBe('qawsedrftgyhuj');
+  });
+  
+    
+
 
 
 });

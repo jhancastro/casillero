@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit{
   constructor(
     private readonly router: Router,
     private formBuilder: FormBuilder,
-    private loginService : LoginService
+    public loginService : LoginService
   ) {
   }
 
@@ -40,23 +40,22 @@ export class LoginComponent implements OnInit{
     return false;
   }
 
-  async login(){
-    try {
-      const resp = await this.loginService.login(this.formLogin.value);
-      if (resp[0]?.token) {
+  login(data? ) {
+   data = this.formLogin.value
+   this.loginService.loginUser(data).subscribe(
+     resp => {
+      if (resp[0]?.token || resp?.token ) {
         localStorage.setItem('token', resp.token);
+        this.token =  resp.token;
         this.redirectUsers();
         return true;
       }else{
         this.error = 'User/password incorrect';
         return false;
       }
-    }catch (e) {
-      this.error = 'User/password incorrect';
-      return false;
-    }
-    
-  }
+     }
+   )
+}
 
   public redirectUsers() {
     this.router.navigateByUrl('/home');

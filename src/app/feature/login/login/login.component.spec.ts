@@ -46,11 +46,12 @@ describe('LoginComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-
+/*
   it('Debe de validar token', () => {
     const validador = component.validateToken();
     expect(validador).toBeFalse();
   });
+*/
   it('Debe de validar login exitoso', () => {
     spyOn(component.loginService,'loginUser').and.callFake(()=>of(
         {

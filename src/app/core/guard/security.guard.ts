@@ -16,7 +16,8 @@ token: string;
 
   validateToken(token: string){
     if (!token){
-      this.router.navigate(['/login']);
+      const urlLogin = '/login'
+      this.router.navigate([urlLogin]);
       return true;
     }
     return false;
@@ -24,7 +25,8 @@ token: string;
 
   public logout() {
     localStorage.clear();
-    this.router.navigate(['/login']);
+    const urlHome = '/home'
+    this.router.navigate([urlHome]);
     return true;
   }
 

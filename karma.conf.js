@@ -35,6 +35,8 @@ module.exports = function (config) {
     autoWatch: true,
     browsers: ['ChromeHeadless'],
     singleRun: true,
+    // browsers: ['Chrome'],
+    // singleRun: false,
     restartOnFileChange: true,
     junitReporter: {
       outputDir: 'test-results',

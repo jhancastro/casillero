@@ -1,13 +1,84 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 99.0.4844.51 (Windows 10)" package="" timestamp="2022-03-05T20:53:48" id="0" hostname="JHAN-CASTRO" tests="29" errors="1" failures="0" time="0.019">
+<testsuite name="Chrome 99.0.4844.51 (Windows 10)" package="" timestamp="2022-03-05T21:33:06" id="0" hostname="JHAN-CASTRO" tests="30" errors="0" failures="0" time="0.159">
   <properties>
-    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/99.0.4844.51 Safari/537.36"/>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36"/>
   </properties>
-  <testcase name="SecurityGuard should ..." time="0.014" classname="SecurityGuard"/>
-  <testcase name="SecurityGuard debe validar con Token..." time="0.002" classname="SecurityGuard"/>
-  <testcase name="SecurityGuard debe validar sin Token..." time="0.003" classname="SecurityGuard"/>
+  <testcase name="HomeComponent should create" time="0.025" classname="HomeComponent"/>
+  <testcase name="CollectComponent Debe de retornar un valor no valido de cobro" time="0.008" classname="CollectComponent"/>
+  <testcase name="CollectComponent should create" time="0.003" classname="CollectComponent"/>
+  <testcase name="AppComponent should have as title 'app-base'" time="0.009" classname="AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.005" classname="AppComponent"/>
+  <testcase name="NavbarComponent should create" time="0.012" classname="NavbarComponent"/>
+  <testcase name="ToolbarComponent Debe de remover item token" time="0.01" classname="ToolbarComponent"/>
+  <testcase name="ToolbarComponent should create" time="0.011" classname="ToolbarComponent"/>
+  <testcase name="FilterLockerByTypePipe create an instance" time="0" classname="FilterLockerByTypePipe"/>
+  <testcase name="FilterLockerByTypePipe debe retornar data filtrada" time="0" classname="FilterLockerByTypePipe"/>
+  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega criterio" time="0" classname="FilterLockerByTypePipe"/>
+  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega casillero doble" time="0" classname="FilterLockerByTypePipe"/>
+  <testcase name="LockerService should be created" time="0.002" classname="LockerService"/>
+  <testcase name="LockerComponent should create" time="0.015" classname="LockerComponent"/>
+  <testcase name="SaveComponent Debe validar Tipos de casilleros" time="0.016" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo sencillo" time="0.003" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo doble" time="0.002" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe Cargar data inicial" time="0.001" classname="SaveComponent"/>
+  <testcase name="SaveComponent should create" time="0.003" classname="SaveComponent"/>
+  <testcase name="SecurityGuard debe validar sin Token..." time="0.002" classname="SecurityGuard"/>
+  <testcase name="SecurityGuard debe validar con Token..." time="0.004" classname="SecurityGuard"/>
+  <testcase name="SecurityGuard should ..." time="0.002" classname="SecurityGuard"/>
+  <testcase name="AuthInterceptor should be created" time="0.004" classname="AuthInterceptor"/>
+  <testcase name="LoginService Deberia retornar token (login correcto)" time="0.003" classname="LoginService"/>
+  <testcase name="LoginService Debe de crearse correctamente" time="0" classname="LoginService"/>
+  <testcase name="ProductoService deberia crear un producto" time="0.002" classname="ProductoService"/>
+  <testcase name="ProductoService deberia eliminar un producto" time="0.001" classname="ProductoService"/>
+  <testcase name="ProductoService should be created" time="0.004" classname="ProductoService"/>
+  <testcase name="ProductoService deberia listar productos" time="0.003" classname="ProductoService"/>
+  <testcase name="ErrorCamposPlantillaComponent should create" time="0.009" classname="ErrorCamposPlantillaComponent"/>
   <system-out>
-    <![CDATA[Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'login'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'login'
+    <![CDATA[Chrome 99.0.4844.51 (Windows 10) ERROR
+  Disconnected Client disconnected from CONNECTED state (transport close)
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
+1. If 'mat-card' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element:
+1. If 'mat-card-header' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element:
+1. If 'mat-card-title' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element:
+1. If 'mat-card-content' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
+1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
+1. If 'mat-card' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card-header' is not a known element:
+1. If 'mat-card-header' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-header' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card-title' is not a known element:
+1. If 'mat-card-title' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-title' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card-content' is not a known element:
+1. If 'mat-card-content' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-content' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card-actions' is not a known element:
+1. If 'mat-card-actions' is an Angular component, then verify that it is part of this module.
+2. If 'mat-card-actions' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
+1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
+2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'login'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'login'
 Error: Cannot match any routes. URL Segment: 'login'
     at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
     at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
@@ -29,20 +100,6 @@ Error: Cannot match any routes. URL Segment: 'login'
     at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
     at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
     at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
-,Chrome Headless 99.0.4844.51 (Windows 10) ERROR
-  An error was thrown in afterAll
-  Unhandled promise rejection: Error: Cannot match any routes. URL Segment: 'login'
-  Error: Cannot match any routes. URL Segment: 'login'
-      at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
-      at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
-      at CatchSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/operators/catchError.js:27:1)
-      at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
-      at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
-      at MapSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
-      at MapSubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
-      at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
-      at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
-      at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
 
 ]]>
   </system-out>

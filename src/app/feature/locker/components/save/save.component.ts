@@ -12,6 +12,7 @@ export class SaveComponent implements OnInit {
   typeLocker : ItipoCasilleros[];
   sencillos : Icasilleros[];
   dobles : Icasilleros[];
+  filterLocker : ItipoCasilleros[];
 
   constructor(
     protected lockerService : LockerService,
@@ -32,11 +33,11 @@ export class SaveComponent implements OnInit {
   onCollect(data: Icasilleros, tipo: string){
     if (data.estado === 'ocupado'){
           if (tipo === 'sencillo'){
-            let locker = this.typeLocker.filter(r=>r.tipo==='sencillo');
-            data.valorHora = locker[0].valorHora;
+            this.filterLocker = this.typeLocker.filter(r=>r.tipo==='sencillo');
+            data.valorHora = this.filterLocker[0].valorHora;
           }else{
-            let locker = this.typeLocker.filter(r=>r.tipo==='doble');
-            data.valorHora = locker[0].valorHora;
+            this.filterLocker = this.typeLocker.filter(r=>r.tipo==='doble');
+            data.valorHora = this.filterLocker[0].valorHora;
           }
             const winCollect = this.dialog.open(
               CollectComponent,

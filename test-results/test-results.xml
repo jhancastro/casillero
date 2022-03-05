@@ -1,41 +1,41 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 99.0.4844.51 (Windows 10)" package="" timestamp="2022-03-05T21:53:10" id="0" hostname="JHAN-CASTRO" tests="33" errors="0" failures="0" time="0.593">
+<testsuite name="Chrome 99.0.4844.51 (Windows 10)" package="" timestamp="2022-03-05T21:57:58" id="0" hostname="JHAN-CASTRO" tests="33" errors="0" failures="0" time="0.573">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36"/>
   </properties>
-  <testcase name="ErrorCamposPlantillaComponent should create" time="0.085" classname="ErrorCamposPlantillaComponent"/>
-  <testcase name="FilterLockerByTypePipe debe retornar data filtrada" time="0.004" classname="FilterLockerByTypePipe"/>
-  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega criterio" time="0.001" classname="FilterLockerByTypePipe"/>
-  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega casillero doble" time="0" classname="FilterLockerByTypePipe"/>
-  <testcase name="FilterLockerByTypePipe create an instance" time="0" classname="FilterLockerByTypePipe"/>
-  <testcase name="SaveComponent Debe Cargar data inicial" time="0.077" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo sencillo" time="0.012" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo doble" time="0.02" classname="SaveComponent"/>
+  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega casillero doble" time="0.005" classname="FilterLockerByTypePipe"/>
+  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega criterio" time="0.002" classname="FilterLockerByTypePipe"/>
+  <testcase name="FilterLockerByTypePipe create an instance" time="0.001" classname="FilterLockerByTypePipe"/>
+  <testcase name="FilterLockerByTypePipe debe retornar data filtrada" time="0.001" classname="FilterLockerByTypePipe"/>
+  <testcase name="LockerService should be created" time="0.029" classname="LockerService"/>
+  <testcase name="CollectComponent should create" time="0.083" classname="CollectComponent"/>
+  <testcase name="CollectComponent Debe de retornar un valor no valido de cobro" time="0.018" classname="CollectComponent"/>
+  <testcase name="SaveComponent Debe validar Tipos de casilleros" time="0.065" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo doble" time="0.012" classname="SaveComponent"/>
   <testcase name="SaveComponent should create" time="0.009" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe validar Tipos de casilleros" time="0.008" classname="SaveComponent"/>
-  <testcase name="AuthInterceptor should be created" time="0.008" classname="AuthInterceptor"/>
-  <testcase name="ProductoService deberia listar productos" time="0.007" classname="ProductoService"/>
-  <testcase name="ProductoService deberia crear un producto" time="0.006" classname="ProductoService"/>
-  <testcase name="ProductoService should be created" time="0.004" classname="ProductoService"/>
-  <testcase name="ProductoService deberia eliminar un producto" time="0.004" classname="ProductoService"/>
-  <testcase name="LockerComponent should create" time="0.025" classname="LockerComponent"/>
-  <testcase name="CollectComponent Debe de retornar un valor no valido de cobro" time="0.027" classname="CollectComponent"/>
-  <testcase name="CollectComponent should create" time="0.014" classname="CollectComponent"/>
-  <testcase name="LockerService should be created" time="0.005" classname="LockerService"/>
-  <testcase name="NavbarComponent should create" time="0.026" classname="NavbarComponent"/>
-  <testcase name="LoginComponent Debe de validar login exitoso" time="0.065" classname="LoginComponent"/>
-  <testcase name="LoginComponent Debe de validar token" time="0.026" classname="LoginComponent"/>
-  <testcase name="LoginComponent should create" time="0.024" classname="LoginComponent"/>
-  <testcase name="SecurityGuard debe validar sin Token..." time="0.007" classname="SecurityGuard"/>
-  <testcase name="SecurityGuard should ..." time="0.009" classname="SecurityGuard"/>
-  <testcase name="SecurityGuard debe validar con Token..." time="0.002" classname="SecurityGuard"/>
-  <testcase name="LoginService Debe de crearse correctamente" time="0" classname="LoginService"/>
-  <testcase name="LoginService Deberia retornar token (login correcto)" time="0.015" classname="LoginService"/>
-  <testcase name="AppComponent should create the app" time="0.024" classname="AppComponent"/>
-  <testcase name="AppComponent should have as title 'app-base'" time="0.011" classname="AppComponent"/>
-  <testcase name="ToolbarComponent Debe de remover item token" time="0.019" classname="ToolbarComponent"/>
-  <testcase name="ToolbarComponent should create" time="0.022" classname="ToolbarComponent"/>
-  <testcase name="HomeComponent should create" time="0.027" classname="HomeComponent"/>
+  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo sencillo" time="0.008" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe Cargar data inicial" time="0.007" classname="SaveComponent"/>
+  <testcase name="LockerComponent should create" time="0.032" classname="LockerComponent"/>
+  <testcase name="AuthInterceptor should be created" time="0.005" classname="AuthInterceptor"/>
+  <testcase name="ProductoService should be created" time="0.005" classname="ProductoService"/>
+  <testcase name="ProductoService deberia crear un producto" time="0.004" classname="ProductoService"/>
+  <testcase name="ProductoService deberia listar productos" time="0.004" classname="ProductoService"/>
+  <testcase name="ProductoService deberia eliminar un producto" time="0.003" classname="ProductoService"/>
+  <testcase name="HomeComponent should create" time="0.012" classname="HomeComponent"/>
+  <testcase name="ToolbarComponent should create" time="0.02" classname="ToolbarComponent"/>
+  <testcase name="ToolbarComponent Debe de remover item token" time="0.023" classname="ToolbarComponent"/>
+  <testcase name="SecurityGuard debe validar sin Token..." time="0.01" classname="SecurityGuard"/>
+  <testcase name="SecurityGuard should ..." time="0.003" classname="SecurityGuard"/>
+  <testcase name="SecurityGuard debe validar con Token..." time="0.003" classname="SecurityGuard"/>
+  <testcase name="AppComponent should have as title 'app-base'" time="0.017" classname="AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.019" classname="AppComponent"/>
+  <testcase name="ErrorCamposPlantillaComponent should create" time="0.029" classname="ErrorCamposPlantillaComponent"/>
+  <testcase name="NavbarComponent should create" time="0.036" classname="NavbarComponent"/>
+  <testcase name="LoginComponent should create" time="0.048" classname="LoginComponent"/>
+  <testcase name="LoginComponent Debe de validar token" time="0.024" classname="LoginComponent"/>
+  <testcase name="LoginComponent Debe de validar login exitoso" time="0.019" classname="LoginComponent"/>
+  <testcase name="LoginService Debe de crearse correctamente" time="0.001" classname="LoginService"/>
+  <testcase name="LoginService Deberia retornar token (login correcto)" time="0.016" classname="LoginService"/>
   <system-out>
     <![CDATA[Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-card' is not a known element:
 1. If 'mat-card' is an Angular component, then verify that it is part of this module.
@@ -79,9 +79,6 @@
 ,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'mat-icon' is not a known element:
 1. If 'mat-icon' is an Angular component, then verify that it is part of this module.
 2. If 'mat-icon' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
 ,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'login'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'login'
 Error: Cannot match any routes. URL Segment: 'login'
     at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
@@ -104,6 +101,9 @@ Error: Cannot match any routes. URL Segment: 'login'
     at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
     at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
     at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
+,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
 
 ]]>
   </system-out>

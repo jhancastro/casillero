@@ -1,72 +1,46 @@
-import { HttpClientTestingModule } from '@angular/common/http/testing';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ActivatedRoute } from '@angular/router';
-import { RouterTestingModule } from '@angular/router/testing';
-import { of } from 'rxjs';
-import { LoginComponent } from './login.component';
-import {LoginService} from './shared/login/login.service';
+// Karma configuration file, see link for more information
+// https://karma-runner.github.io/1.0/config/configuration-file.html
 
-
-const testUrl = '/home';
-describe('LoginComponent', () => {
-  let component: LoginComponent;
-  let fixture: ComponentFixture<LoginComponent>;
-  let activateRoute: ActivatedRoute;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports:[HttpClientTestingModule,
-         RouterTestingModule,
-         FormsModule,
-         ReactiveFormsModule
-        ],
-      declarations: [ LoginComponent ],
-      providers:[LoginService,
-        { 
-          provide: RouterTestingModule, useValue: {url: testUrl } 
-        }
-      ],schemas: [NO_ERRORS_SCHEMA]
-    })
-    .compileComponents();
-    activateRoute = TestBed.inject(ActivatedRoute);
-    console.log(activateRoute)
-    fixture = TestBed.createComponent(LoginComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+module.exports = function (config) {
+  config.set({
+    basePath: '',
+    frameworks: ['jasmine', '@angular-devkit/build-angular'],
+    plugins: [
+      require('karma-jasmine'),
+      require('karma-chrome-launcher'),
+      require('karma-junit-reporter'),
+      require('karma-jasmine-html-reporter'),
+      require('karma-coverage-istanbul-reporter'),
+      require('@angular-devkit/build-angular/plugins/karma')
+    ],
+    client: {
+      clearContext: false // leave Jasmine Spec Runner output visible in browser
+    },
+    remapIstanbulReporter: {
+      dir : 'reports/coverage/app-base',
+      reports: {
+        html: 'coverage',
+        lcovonly: 'reports/coverage/app-base/coverage.lcov'
+      }
+    },
+    coverageIstanbulReporter: {
+      dir: require('path').join(__dirname, 'reports/coverage/app-base'),
+      reports: ['html', 'lcovonly', 'text-summary'],
+      fixWebpackSourcePaths: true
+    },
+    reporters: ['progress', 'kjhtml','junit'],
+    port: 9876,
+    colors: true,
+    logLevel: config.LOG_INFO,
+    autoWatch: true,
+    browsers: ['ChromeHeadless'],
+    singleRun: true,
+    restartOnFileChange: true,
+    junitReporter: {
+      outputDir: 'test-results',
+      outputFile: 'test-results.xml',
+      suite: '',
+      useBrowserName: false
+    }
   });
-
-  beforeEach(() => {
-    fixture = TestBed.createComponent(LoginComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
-  it('Debe de validar token', () => {
-    const validador = component.validateToken();
-    expect(validador).toBeTrue();
-  });
-  it('Debe de validar login exitoso', () => {
-    spyOn(component.loginService,'loginUser').and.callFake(()=>of(
-        {
-            id: 1,
-            email: 'jhancas@gmail.com',
-            password: '12345678',
-            token: 'qawsedrftgyhuj'
-        }
-     ));
-    
-    const email = component.formLogin.controls['email']; 
-    const password = component.formLogin.controls['password'];
-    email.setValue('jhancas@gmail.com');
-    password.setValue('12345678');
-    //expect(component.loginService.loginUser(component.formLogin.value)).toBeTrue();
-    component.login();
-    expect(component.token).toBe('qawsedrftgyhuj');
-  });
-});
+};

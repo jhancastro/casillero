@@ -42,7 +42,7 @@ describe('SaveComponent', () => {
     expect(component.typeLocker).toBeUndefined();
   });
 
-  it('Debe abrir ventana para cobro', () => {
+  it('Debe abrir ventana para cobro para tipo sencillo', () => {
     const casillero : Icasilleros = {
       id:1,
       estado:'ocupado',
@@ -63,6 +63,29 @@ describe('SaveComponent', () => {
     component.onCollect(casillero,'sencillo');
     expect(component.filterLocker.length).toBe(1);
     expect(dialogSpy.open).toHaveBeenCalled();
+  });
+
+  it('Debe abrir ventana para cobro para tipo doble', () => {
+    const casillero : Icasilleros = {
+      id:1,
+      estado:'ocupado',
+      placa:'FTH65B',
+      nombre:'Juan Vargas',
+      telefono:'3041447671',
+      ingreso:'2022-03-01 09:28:58',
+      valorHora:1500
+    }
+    component.typeLocker = [{
+      id:1,
+      tipo:'doble',
+      valorHora:1500,
+      cantidad:25
+    }];
+    const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
+    dialogSpy.open.and.returnValue(dialogRef);
+    component.onCollect(casillero,'doble');
+    expect(component.filterLocker.length).toBe(1);
+    
   });
   
   it('Debe Cargar data inicial', () => {

@@ -52,7 +52,7 @@ export class ToolbarComponent implements OnInit {
   public logout() {
     /* Deberia retornar al login*/
     localStorage.removeItem('token');
-    const urlLogin = '/login'
+    const urlLogin = '/login';
     this.router.navigateByUrl(urlLogin);
     }
 

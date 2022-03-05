@@ -58,7 +58,7 @@ export class LoginComponent implements OnInit{
 }
 
   public redirectUsers() {
-    this.router.navigateByUrl('/home');
+   // this.router.navigateByUrl('/home');
   }
 
   getCurrentRouterPath(): Array<string> {

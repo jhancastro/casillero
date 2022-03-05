@@ -40,8 +40,8 @@ export class LoginComponent implements OnInit{
     return false;
   }
 
-  login(data? ) {
-   data = this.formLogin.value
+  login( ) {
+   const data = this.formLogin.value
    this.loginService.loginUser(data).subscribe(
      resp => {
       if (resp[0]?.token || resp?.token ) {
@@ -56,6 +56,7 @@ export class LoginComponent implements OnInit{
      }
    )
 }
+
 
   public redirectUsers() {
    // this.router.navigateByUrl('/home');

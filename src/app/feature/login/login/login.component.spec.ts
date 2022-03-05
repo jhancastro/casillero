@@ -76,7 +76,7 @@ describe('LoginComponent', () => {
     email.setValue('jhancas@gmail.com');
     password.setValue('12345678');
     //expect(component.loginService.loginUser(component.formLogin.value)).toBeTrue();
-    component.login(component.formLogin.value)
+    component.login()
     expect(component.token).toBe('qawsedrftgyhuj');
   });
   

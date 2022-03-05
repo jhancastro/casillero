@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit{
   validateToken(){
     this.token = localStorage.getItem('token');
     if (this.token){
-      this.redirectUsers();
       return true;
     }
     return false;

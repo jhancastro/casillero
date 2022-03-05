@@ -47,20 +47,32 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('Debe de validar inicio cuando existe token', () => {
-    localStorage.setItem('1234567876','token')
-    component.token = '1234567876'
-    const validador = component.validateToken();
-    expect(validador).toBeTrue();
-  });
-
   it('Debe de validar inicio cuando no existe token', () => {
     localStorage.clear();
     const validador = component.validateToken();
     expect(validador).toBeFalse();
   });
 
-  it('Debe de validar login exitoso', () => {
+  it('Debe de validar login exitoso desde loginUsers', () => {
+    spyOn(component.loginService,'loginUser').and.callFake(()=>of(
+        {
+            id: 1,
+            email: 'jhancas@gmail.com',
+            password: '12345678',
+            token: 'qawsedrftgyhuj'
+        }
+     ));
+    
+    const email = component.formLogin.controls['email']; 
+    const password = component.formLogin.controls['password'];
+    email.setValue('jhancas@gmail.com');
+    password.setValue('12345678');
+    //expect(component.loginService.loginUser(component.formLogin.value)).toBeTrue();
+    component.login();
+    expect(component.token).toBe('qawsedrftgyhuj');
+  });
+
+  it('Debe de validar login exitoso desde login', () => {
     spyOn(component.loginService,'loginUser').and.callFake(()=>of(
         {
             id: 1,

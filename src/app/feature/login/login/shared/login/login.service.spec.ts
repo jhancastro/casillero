@@ -29,22 +29,22 @@ let httpClientSpy : { get:jasmine.Spy }
       password:'12345678',
       id:0,
       token:''
-    }
+    };
     const mockResult = {
       id : 1,
       email : "jcastro@gmail.com",
       password : "12345678",
       token :"qawsedrftgyhuj1" 
-    }
+    };
     
     
     httpClientSpy.get.and.returnValue(of(mockResult));
     service.loginUser(input)
     .subscribe(result =>{
-      expect(result).toEqual(mockResult)
-      done()
-    })
+      expect(result).toEqual(mockResult);
+      done();
+    });
 
-  })
+  });
 
 });

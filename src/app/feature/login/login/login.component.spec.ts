@@ -47,10 +47,17 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('Debe de validar token', () => {
+  it('Debe de validar inicio cuando existe token', () => {
     localStorage.setItem('1234567876','token')
+    component.token = '1234567876'
     const validador = component.validateToken();
     expect(validador).toBeTrue();
+  });
+
+  it('Debe de validar inicio cuando no existe token', () => {
+    localStorage.clear();
+    const validador = component.validateToken();
+    expect(validador).toBeFalse();
   });
 
   it('Debe de validar login exitoso', () => {

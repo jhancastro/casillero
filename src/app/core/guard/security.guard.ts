@@ -16,7 +16,7 @@ token: string;
 
   validateToken(token: string){
     if (!token){
-      const urlLogin = '/login';
+      const urlLogin = '';
       this.router.navigate([urlLogin]);
       return true;
     }

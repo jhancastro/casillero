@@ -61,6 +61,7 @@ describe('SaveComponent', () => {
     const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
     component.onCollect(casillero,'sencillo');
+    expect(component.filterLocker.length).toBe(1);
     expect(dialogSpy.open).toHaveBeenCalled();
   });
   

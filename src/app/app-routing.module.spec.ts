@@ -1,5 +1,6 @@
+import { Location } from "@angular/common";
 import { Router } from "@angular/router";
-import { TestBed, fakeAsync, tick } from "@angular/core/testing";
+import { TestBed,  tick,  fakeAsync , flush} from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 
 import{routes} from './app-routing.module'
@@ -12,6 +13,7 @@ import { HomeComponent } from "@home/home.component";
 
 describe('app-routing.module', () => {
   let router: Router;
+  let location: Location;
   let dialogSpy : jasmine.SpyObj<MatDialog>;
   
   beforeEach(() => {
@@ -27,6 +29,7 @@ schemas:[NO_ERRORS_SCHEMA]
     });
 
     router = TestBed.get(Router);
+   location = TestBed.get(Location);
 
     TestBed.createComponent(AppComponent);
     router.initialNavigation();
@@ -41,4 +44,12 @@ schemas:[NO_ERRORS_SCHEMA]
     tick(50);
     expect(done).toBeTruthy();
   }));
+
+  it('navigate to  redirects you to /home', fakeAsync(() => {
+    router.navigate(['/home']).then(() => {
+      expect(location.path()).toBe('/home');
+      flush();
+    });
+  }));
+
 });

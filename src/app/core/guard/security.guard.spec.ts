@@ -6,6 +6,7 @@ import { Location } from "@angular/common";
 
 import { SecurityGuard } from './security.guard';
 
+
 describe('SecurityGuard', () => {
 //  let router: Router;
  let location: Location;
@@ -35,11 +36,15 @@ describe('SecurityGuard', () => {
   }));
 
   it('debe de validar al hacer logout ir a /login', inject([SecurityGuard], (guard: SecurityGuard) => {
+    let url = ''
+    
     fakeAsync(() => {
        guard.logout();
-        expect(location.path()).toBe('/login');
-        flush();
+       url = location.path()
+       flush();    
     }) 
+    expect(url).toBe('')
   }));
-
 });
+
+

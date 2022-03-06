@@ -42,6 +42,17 @@ describe('SaveComponent', () => {
     expect(component.typeLocker).toBeUndefined();
   });
 
+  
+  it('Debe validar inicio de datos indefinidos para casilleros sencillos', () => {
+    component.ngOnInit()
+    expect(component.sencillos).toBeUndefined();
+  });
+
+  it('Debe validar inicio de datos indefinidos para casilleros dobles', () => {
+    component.ngOnInit()
+    expect(component.dobles).toBeUndefined();
+  });
+
   it('Debe abrir ventana para cobro para tipo sencillo', () => {
     const casillero : Icasilleros = {
       id:1,

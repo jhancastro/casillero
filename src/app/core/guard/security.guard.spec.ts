@@ -1,18 +1,22 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
-import { TestBed, inject } from '@angular/core/testing';
+import { TestBed, inject, flush, fakeAsync } from '@angular/core/testing';
+// import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
+import { Location } from "@angular/common";
 
 import { SecurityGuard } from './security.guard';
 
 describe('SecurityGuard', () => {
-  
+//  let router: Router;
+ let location: Location;
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
       providers: [SecurityGuard],
       schemas:[NO_ERRORS_SCHEMA]
     });
-    
+    // router = TestBed.get(Router);
+    location = TestBed.get(Location);
   });
 
   it('should ...', inject([SecurityGuard], (guard: SecurityGuard) => {
@@ -29,4 +33,13 @@ describe('SecurityGuard', () => {
     const validator = guard.validateToken(guard.token);
     expect(validator).toBeTrue();
   }));
+
+  it('debe de validar al hacer logout ir a /login', inject([SecurityGuard], (guard: SecurityGuard) => {
+    fakeAsync(() => {
+       guard.logout();
+        expect(location.path()).toBe('/login');
+        flush();
+    }) 
+  }));
+
 });

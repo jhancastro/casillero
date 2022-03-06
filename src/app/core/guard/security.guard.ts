@@ -25,7 +25,7 @@ token: string;
 
   public logout() {
     localStorage.clear();
-    const urlHome = '/home';
+    const urlHome = '/login';
     this.router.navigate([urlHome]);
     return true;
   }

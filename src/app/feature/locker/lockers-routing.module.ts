@@ -4,7 +4,7 @@ import { LockerComponent } from './components/locker/locker.component';
 import { SaveComponent } from './components/save/save.component';
 
 
-const routes: Routes = [
+export const routes: Routes = [
   {
     path: '',
     component: LockerComponent,

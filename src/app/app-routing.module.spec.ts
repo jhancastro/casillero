@@ -2,16 +2,15 @@ import { Router } from "@angular/router";
 import { TestBed, fakeAsync, tick } from "@angular/core/testing";
 import { RouterTestingModule } from "@angular/router/testing";
 
-import{routes} from './lockers-routing.module'
+import{routes} from './app-routing.module'
 import { AppComponent } from "src/app/app.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientTestingModule } from "@angular/common/http/testing";
-import { LockerComponent } from "./components/locker/locker.component";
-import { SaveComponent } from "./components/save/save.component";
 import { MatDialog } from "@angular/material/dialog";
 import { NO_ERRORS_SCHEMA } from "@angular/core";
+import { HomeComponent } from "@home/home.component";
 
-describe('lockers-routing.module', () => {
+describe('app-routing.module', () => {
   let router: Router;
   let dialogSpy : jasmine.SpyObj<MatDialog>;
   
@@ -20,7 +19,7 @@ describe('lockers-routing.module', () => {
       imports: [RouterTestingModule.withRoutes(routes),
         ReactiveFormsModule ,HttpClientTestingModule
       ],
-      declarations: [LockerComponent, SaveComponent, AppComponent],
+      declarations: [HomeComponent, AppComponent],
       providers: [
         { provide: MatDialog, useValue: dialogSpy }
 ],

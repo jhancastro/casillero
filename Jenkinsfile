@@ -48,14 +48,14 @@ stage('NPM Install') {
         sh 'npm run test'
       }
     }
-  
+  /*
     stage('Test end-to-end') {
       steps{
         echo "------------>Testing Protractor<------------"
         sh 'npm run e2e'
       }
     }
-
+*/
 
 stage('Static Code Analysis') {
    steps{
@@ -68,7 +68,7 @@ stage('Static Code Analysis') {
   stage('Build') {
       steps {
         echo "------------>Building<------------"
-     //   sh 'npm run build'
+        sh 'npm run build'
       }
     }
 

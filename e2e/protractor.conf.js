@@ -12,11 +12,9 @@ exports.config = {
   specs: [
     './src/**/*.e2e-spec.ts'
   ],
-  capabilities: {
-    browserName: 'ChromeHeadless'
-  },
+ 
   directConnect: true,
-  baseUrl: 'http://localhost:4200/',
+  //baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {
     showColors: true,

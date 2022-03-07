@@ -48,15 +48,15 @@ describe('CollectComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('Debe de retornar un valor no valido de cobro', () => {
-    component.ngOnInit(); 
-    expect(component.cobro).toEqual(NaN);
-  });
+  // it('Debe de retornar un valor no valido de cobro', () => {
+  //   component.ngOnInit(); 
+  //   expect(component.cobro).toEqual(NaN);
+  // });
 
-  it('Debe de inicializar bandera de asignacion o cobro', () => {
-    component.ngOnInit(); 
-    expect(component.flagfree).toBeFalse();
-  });
+  // it('Debe de inicializar bandera de asignacion o cobro', () => {
+  //   component.ngOnInit(); 
+  //   expect(component.flagfree).toBeFalse();
+  // });
 
   // it('Debe de realizar el llamado al metodo realizarAsignacion', () => {
   //   component.flagfree = true;

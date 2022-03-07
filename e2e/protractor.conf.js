@@ -15,7 +15,7 @@ exports.config = {
   capabilities: {
     browserName: 'ChromeHeadless'
   },
-  directConnect: true,
+  directConnect: false,
   baseUrl: 'http://localhost:4200/',
   framework: 'jasmine',
   jasmineNodeOpts: {

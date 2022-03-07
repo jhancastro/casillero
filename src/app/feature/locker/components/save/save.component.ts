@@ -15,7 +15,7 @@ export class SaveComponent implements OnInit {
   filterLocker : ItipoCasilleros[];
 
   constructor(
-    protected lockerService : LockerService,
+    public lockerService : LockerService,
     public dialog: MatDialog
   ) { }
 
@@ -24,10 +24,17 @@ export class SaveComponent implements OnInit {
 
    }
 
-   async onchargueData(){
-    this.typeLocker = await this.lockerService.getCasilleros().toPromise();
-    this.sencillos = await this.lockerService.getParrillaCasilleros('sencillos').toPromise();
-    this.dobles = await this.lockerService.getParrillaCasilleros('dobles').toPromise();
+    onchargueData(){
+    this.lockerService.getCasilleros().subscribe(
+      type => this.typeLocker = type
+    )
+    
+    this.lockerService.getParrillaCasilleros('sencillos').subscribe(
+      sencillos => this.sencillos = sencillos      
+    )
+    this.lockerService.getParrillaCasilleros('dobles').subscribe(
+      dobles => this.dobles = dobles
+    )
    }
 
   onCollect(data: Icasilleros, tipo: string){

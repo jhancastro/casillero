@@ -6,6 +6,7 @@ import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { Icasilleros } from '@locker/shared/model';
 import { of } from 'rxjs';
+import { LockerService } from '@locker/shared/service/locker.service';
 
 describe('SaveComponent', () => {
   let component: SaveComponent;
@@ -19,7 +20,7 @@ describe('SaveComponent', () => {
     await TestBed.configureTestingModule({
       imports:[HttpClientTestingModule],
       declarations: [ SaveComponent,FilterLockerByTypePipe ],
-      providers: [
+      providers: [LockerService,
                 { provide: MatDialog, useValue: dialogSpy }
     ],
     schemas:[NO_ERRORS_SCHEMA]
@@ -97,6 +98,50 @@ describe('SaveComponent', () => {
     expect(component.filterLocker.length).toBe(1);
     
   });
+
+  it('Debe Cargar data inicial mock del servicio LockerService getCasilleros', () => {
+    spyOn(component.lockerService,'getCasilleros').and.callFake(()=>of(
+      [{id:1,tipo:'sencillo',valorHora:1000,cantidad:50},
+      {id:2,tipo:'doble',valorHora:1500,cantidad:25}]
+      
+   ));
+   component.onchargueData();
+   expect(component.typeLocker.length).toBe(2);
+  });
+
+  it('Debe Cargar data inicial mock del servicio LockerService getParrillaCasilleros - sencillos', () => {
+    spyOn(component.lockerService,'getParrillaCasilleros').and.callFake(()=>of(
+      [
+        { id:1,
+          estado:'ocupado',
+          placa:'FTH65B',
+          nombre:'Juan Vargas',
+          telefono:'3041447671',
+          ingreso:'2022-03-01 09:28:58'}
+    ]
+      
+   ));
+   component.onchargueData();
+   expect(component.sencillos.length).toBe(1);
+  });
+
+  it('Debe Cargar data inicial mock del servicio LockerService getParrillaCasilleros - dobles', () => {
+    spyOn(component.lockerService,'getParrillaCasilleros').and.callFake(()=>of(
+      [
+        { id:1,
+          estado:'ocupado',
+          placa:'FTH65B',
+          nombre:'Juan Vargas',
+          telefono:'3041447671',
+          ingreso:'2022-03-01 09:28:58'}
+    ]
+      
+   ));
+   component.onchargueData();
+   expect(component.dobles.length).toBe(1);
+  });
+
+
   
   it('Debe Cargar data inicial', () => {
     component.ngOnInit()

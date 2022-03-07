@@ -56,8 +56,5 @@ export class LoginComponent implements OnInit{
    );
 }
 
-  getCurrentRouterPath(): Array<string> {
-    return this.router.url.split('/').filter(path => path);
-  }
 
 }

@@ -1,166 +1,63 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome 99.0.4844.51 (Windows 10)" package="" timestamp="2022-03-07T19:06:51" id="0" hostname="JHAN-CASTRO" tests="53" errors="0" failures="0" time="0.593">
+<testsuite name="Chrome Headless 99.0.4844.51 (Windows 10)" package="" timestamp="2022-03-07T20:00:26" id="0" hostname="JHAN-CASTRO" tests="53" errors="0" failures="0" time="0.327">
   <properties>
-    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36"/>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/99.0.4844.51 Safari/537.36"/>
   </properties>
-  <testcase name="ProductoService should be created" time="0.017" classname="ProductoService"/>
-  <testcase name="ProductoService deberia eliminar un producto" time="0.007" classname="ProductoService"/>
-  <testcase name="ProductoService deberia listar productos" time="0.004" classname="ProductoService"/>
-  <testcase name="ProductoService deberia crear un producto" time="0.003" classname="ProductoService"/>
-  <testcase name="CollectComponent Debe de inicializar bandera de asignacion o cobro" time="0.046" classname="CollectComponent"/>
-  <testcase name="CollectComponent Debe de retornar un valor no valido de cobro" time="0.007" classname="CollectComponent"/>
-  <testcase name="CollectComponent should create" time="0.006" classname="CollectComponent"/>
-  <testcase name="SaveComponent Debe Cargar data inicial mock del servicio LockerService getParrillaCasilleros - dobles" time="0.025" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe validar inicio de datos indefinidos para casilleros sencillos" time="0.009" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe Cargar data inicial" time="0.003" classname="SaveComponent"/>
-  <testcase name="SaveComponent should create" time="0.003" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe Cargar data inicial mock del servicio LockerService getCasilleros" time="0.004" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe validar Tipos de casilleros" time="0.004" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe Cargar data inicial mock del servicio LockerService getParrillaCasilleros - sencillos" time="0.004" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo doble" time="0.099" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe validar inicio de datos indefinidos para casilleros dobles" time="0.004" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo sencillo" time="0.005" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe abrir ventana para asignar casillero tipo sencillo" time="0.01" classname="SaveComponent"/>
-  <testcase name="SaveComponent Debe abrir ventana para asignar casillero tipo doble" time="0.007" classname="SaveComponent"/>
-  <testcase name="LockerComponent should create" time="0.032" classname="LockerComponent"/>
-  <testcase name="NavbarComponent should create" time="0.012" classname="NavbarComponent"/>
-  <testcase name="login-routing.module navigate to  redirects you to /home" time="0.037" classname="login-routing.module"/>
-  <testcase name="login-routing.module fakeAsync works" time="0.007" classname="login-routing.module"/>
-  <testcase name="ToolbarComponent Debe de remover item token" time="0.015" classname="ToolbarComponent"/>
-  <testcase name="ToolbarComponent should create" time="0.008" classname="ToolbarComponent"/>
-  <testcase name="app-routing.module navigate to  redirects you to /home" time="0.01" classname="app-routing.module"/>
-  <testcase name="app-routing.module fakeAsync works" time="0.005" classname="app-routing.module"/>
+  <testcase name="SecurityGuard debe validar sin Token..." time="0.012" classname="SecurityGuard"/>
+  <testcase name="SecurityGuard debe validar con Token..." time="0.002" classname="SecurityGuard"/>
+  <testcase name="SecurityGuard should ..." time="0.001" classname="SecurityGuard"/>
+  <testcase name="app-routing.module fakeAsync works" time="0.02" classname="app-routing.module"/>
+  <testcase name="app-routing.module navigate to  redirects you to /home" time="0.005" classname="app-routing.module"/>
   <testcase name="HomeComponent should create" time="0.005" classname="HomeComponent"/>
-  <testcase name="LoginService Debe de crearse correctamente" time="0.001" classname="LoginService"/>
-  <testcase name="LoginService Deberia retornar token (login correcto)" time="0.002" classname="LoginService"/>
-  <testcase name="AppComponent should create the app" time="0.01" classname="AppComponent"/>
-  <testcase name="AppComponent should have as title 'app-base'" time="0.006" classname="AppComponent"/>
-  <testcase name="LoginComponent Debe de validar login exitoso desde loginUsers" time="0.025" classname="LoginComponent"/>
-  <testcase name="LoginComponent Debe de validar login exitoso desde login" time="0.02" classname="LoginComponent"/>
-  <testcase name="LoginComponent should create" time="0.018" classname="LoginComponent"/>
-  <testcase name="LoginComponent Debe de validar inicio cuando no existe token" time="0.04" classname="LoginComponent"/>
-  <testcase name="LoginComponent Debe de validar login fallido desde loginUsers" time="0.019" classname="LoginComponent"/>
-  <testcase name="LoginComponent Debe de validar login fallido desde loginUsers - sin token" time="0.017" classname="LoginComponent"/>
-  <testcase name="lockers-routing.module fakeAsync works" time="0.006" classname="lockers-routing.module"/>
-  <testcase name="AuthInterceptor should be created" time="0.003" classname="AuthInterceptor"/>
   <testcase name="TokenInterceptor se debe de crear correctamente ..." time="0.004" classname="TokenInterceptor"/>
-  <testcase name="ErrorCamposPlantillaComponent should create" time="0.008" classname="ErrorCamposPlantillaComponent"/>
+  <testcase name="AuthInterceptor should be created" time="0.002" classname="AuthInterceptor"/>
+  <testcase name="ToolbarComponent Debe de remover item token" time="0.007" classname="ToolbarComponent"/>
+  <testcase name="ToolbarComponent should create" time="0.004" classname="ToolbarComponent"/>
+  <testcase name="SaveComponent Debe abrir ventana para asignar casillero tipo doble" time="0.078" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe Cargar data inicial mock del servicio LockerService getParrillaCasilleros - sencillos" time="0.003" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe Cargar data inicial mock del servicio LockerService getCasilleros" time="0.004" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe Cargar data inicial" time="0.006" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe validar inicio de datos indefinidos para casilleros dobles" time="0.003" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe validar inicio de datos indefinidos para casilleros sencillos" time="0.002" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe Cargar data inicial mock del servicio LockerService getParrillaCasilleros - dobles" time="0.002" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo sencillo" time="0.003" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe abrir ventana para cobro para tipo doble" time="0.003" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe abrir ventana para asignar casillero tipo sencillo" time="0.003" classname="SaveComponent"/>
+  <testcase name="SaveComponent Debe validar Tipos de casilleros" time="0.003" classname="SaveComponent"/>
+  <testcase name="SaveComponent should create" time="0.005" classname="SaveComponent"/>
+  <testcase name="LoginComponent Debe de validar login exitoso desde login" time="0.028" classname="LoginComponent"/>
+  <testcase name="LoginComponent Debe de validar login fallido desde loginUsers" time="0.011" classname="LoginComponent"/>
+  <testcase name="LoginComponent should create" time="0.008" classname="LoginComponent"/>
+  <testcase name="LoginComponent Debe de validar login fallido desde loginUsers - sin token" time="0.008" classname="LoginComponent"/>
+  <testcase name="LoginComponent Debe de validar inicio cuando no existe token" time="0.008" classname="LoginComponent"/>
+  <testcase name="LoginComponent Debe de validar login exitoso desde loginUsers" time="0.007" classname="LoginComponent"/>
+  <testcase name="NavbarComponent should create" time="0.005" classname="NavbarComponent"/>
+  <testcase name="LoginService Deberia retornar token (login correcto)" time="0.003" classname="LoginService"/>
+  <testcase name="LoginService Debe de crearse correctamente" time="0.002" classname="LoginService"/>
+  <testcase name="AppComponent should have as title 'app-base'" time="0.004" classname="AppComponent"/>
+  <testcase name="AppComponent should create the app" time="0.003" classname="AppComponent"/>
+  <testcase name="CollectComponent should create" time="0.013" classname="CollectComponent"/>
+  <testcase name="CollectComponent Debe de retornar un valor no valido de cobro" time="0.004" classname="CollectComponent"/>
+  <testcase name="CollectComponent Debe de inicializar bandera de asignacion o cobro" time="0.003" classname="CollectComponent"/>
+  <testcase name="LockerService should be created" time="0" classname="LockerService"/>
+  <testcase name="LockerService Deberia retornar la parrilla total de casilleros sencillos)" time="0.005" classname="LockerService"/>
   <testcase name="LockerService Deberia retornar casilleros ocupados)" time="0.002" classname="LockerService"/>
-  <testcase name="LockerService should be created" time="0.001" classname="LockerService"/>
-  <testcase name="LockerService Deberia retornar la parrilla total de casilleros dobles)" time="0.001" classname="LockerService"/>
-  <testcase name="LockerService Deberia retornar la parrilla total de casilleros sencillos)" time="0.002" classname="LockerService"/>
-  <testcase name="FilterLockerByTypePipe debe retornar data filtrada" time="0.001" classname="FilterLockerByTypePipe"/>
+  <testcase name="LockerService Deberia retornar la parrilla total de casilleros dobles)" time="0.002" classname="LockerService"/>
+  <testcase name="ErrorCamposPlantillaComponent should create" time="0.007" classname="ErrorCamposPlantillaComponent"/>
+  <testcase name="lockers-routing.module fakeAsync works" time="0.003" classname="lockers-routing.module"/>
+  <testcase name="ProductoService deberia crear un producto" time="0.003" classname="ProductoService"/>
+  <testcase name="ProductoService deberia listar productos" time="0.001" classname="ProductoService"/>
+  <testcase name="ProductoService should be created" time="0.003" classname="ProductoService"/>
+  <testcase name="ProductoService deberia eliminar un producto" time="0.001" classname="ProductoService"/>
+  <testcase name="login-routing.module navigate to  redirects you to /home" time="0.004" classname="login-routing.module"/>
+  <testcase name="login-routing.module fakeAsync works" time="0.004" classname="login-routing.module"/>
+  <testcase name="LockerComponent should create" time="0.005" classname="LockerComponent"/>
   <testcase name="FilterLockerByTypePipe create an instance" time="0" classname="FilterLockerByTypePipe"/>
-  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega criterio" time="0.001" classname="FilterLockerByTypePipe"/>
   <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega casillero doble" time="0" classname="FilterLockerByTypePipe"/>
-  <testcase name="SecurityGuard debe validar con Token..." time="0.003" classname="SecurityGuard"/>
-  <testcase name="SecurityGuard should ..." time="0.003" classname="SecurityGuard"/>
-  <testcase name="SecurityGuard debe validar sin Token..." time="0.002" classname="SecurityGuard"/>
+  <testcase name="FilterLockerByTypePipe debe retornar data filtrada" time="0.003" classname="FilterLockerByTypePipe"/>
+  <testcase name="FilterLockerByTypePipe debe retornar vacio pues no llega criterio" time="0" classname="FilterLockerByTypePipe"/>
   <system-out>
-    <![CDATA[Chrome 99.0.4844.51 (Windows 10) ERROR
-  Disconnected , because no message in 30000 ms.
-,Chrome 99.0.4844.51 (Windows 10) ERROR
-  Disconnected , because no message in 30000 ms.
-,Chrome 99.0.4844.51 (Windows 10) ERROR
-  Disconnected Client disconnected from CONNECTED state (transport close)
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot create property 'estado' on boolean 'true'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot create property 'estado' on boolean 'true'
-TypeError: Cannot create property 'estado' on boolean 'true'
-    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
-    at Generator.next (<anonymous>)
-    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
-    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1), 'TypeError: Cannot create property 'estado' on boolean 'true'
-    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
-    at Generator.next (<anonymous>)
-    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
-    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)'
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot create property 'estado' on boolean 'true'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot create property 'estado' on boolean 'true'
-TypeError: Cannot create property 'estado' on boolean 'true'
-    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
-    at Generator.next (<anonymous>)
-    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
-    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1), 'TypeError: Cannot create property 'estado' on boolean 'true'
-    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
-    at Generator.next (<anonymous>)
-    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
-    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)'
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot create property 'estado' on boolean 'true'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot create property 'estado' on boolean 'true'
-TypeError: Cannot create property 'estado' on boolean 'true'
-    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
-    at Generator.next (<anonymous>)
-    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
-    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1), 'TypeError: Cannot create property 'estado' on boolean 'true'
-    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
-    at Generator.next (<anonymous>)
-    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
-    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)'
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot create property 'estado' on boolean 'true'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot create property 'estado' on boolean 'true'
-TypeError: Cannot create property 'estado' on boolean 'true'
-    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
-    at Generator.next (<anonymous>)
-    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
-    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1), 'TypeError: Cannot create property 'estado' on boolean 'true'
-    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
-    at Generator.next (<anonymous>)
-    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
-    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
-    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
-    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
-    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
-    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
-    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
-    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)'
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'app-toolbar' is not a known element:
-1. If 'app-toolbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-toolbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element:
-1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'app-toolbar' is not a known element:
-1. If 'app-toolbar' is an Angular component, then verify that it is part of this module.
-2. If 'app-toolbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'login'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'login'
+    <![CDATA[Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'login'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'login'
 Error: Cannot match any routes. URL Segment: 'login'
     at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
     at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
@@ -182,8 +79,96 @@ Error: Cannot match any routes. URL Segment: 'login'
     at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
     at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
     at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'home'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'home'
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot create property 'estado' on boolean 'true'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot create property 'estado' on boolean 'true'
+TypeError: Cannot create property 'estado' on boolean 'true'
+    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
+    at Generator.next (<anonymous>)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1), 'TypeError: Cannot create property 'estado' on boolean 'true'
+    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
+    at Generator.next (<anonymous>)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)'
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot create property 'estado' on boolean 'true'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot create property 'estado' on boolean 'true'
+TypeError: Cannot create property 'estado' on boolean 'true'
+    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
+    at Generator.next (<anonymous>)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1), 'TypeError: Cannot create property 'estado' on boolean 'true'
+    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
+    at Generator.next (<anonymous>)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)'
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot create property 'estado' on boolean 'true'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot create property 'estado' on boolean 'true'
+TypeError: Cannot create property 'estado' on boolean 'true'
+    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
+    at Generator.next (<anonymous>)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1), 'TypeError: Cannot create property 'estado' on boolean 'true'
+    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
+    at Generator.next (<anonymous>)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)'
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot create property 'estado' on boolean 'true'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', TypeError: Cannot create property 'estado' on boolean 'true'
+TypeError: Cannot create property 'estado' on boolean 'true'
+    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
+    at Generator.next (<anonymous>)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1), 'TypeError: Cannot create property 'estado' on boolean 'true'
+    at SaveComponent.<anonymous> (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:65:24)
+    at Generator.next (<anonymous>)
+    at http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:76:1
+    at new ZoneAwarePromise (http://localhost:9876/_karma_webpack_/webpack:/node_modules/zone.js/dist/zone-evergreen.js:1387:1)
+    at __awaiter (http://localhost:9876/_karma_webpack_/webpack:/node_modules/tslib/tslib.es6.js:72:1)
+    at SafeSubscriber._next (http://localhost:9876/_karma_webpack_/webpack:/src/app/feature/locker/components/save/save.component.ts:55:35)
+    at SafeSubscriber.__tryOrUnsub (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:183:1)
+    at SafeSubscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:122:1)
+    at Subscriber._next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:72:1)
+    at Subscriber.next (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:49:1)'
+,Chrome Headless 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'home'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'home'
 Error: Cannot match any routes. URL Segment: 'home'
     at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
     at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
@@ -205,8 +190,12 @@ Error: Cannot match any routes. URL Segment: 'home'
     at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
     at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
     at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
-,Chrome 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'home'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'home'
+,Chrome Headless 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'Unhandled Promise rejection:', 'Cannot match any routes. URL Segment: 'home'', '; Zone:', 'ProxyZone', '; Task:', 'Promise.then', '; Value:', Error: Cannot match any routes. URL Segment: 'home'
 Error: Cannot match any routes. URL Segment: 'home'
     at ApplyRedirects.noMatchError (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2628:1)
     at CatchSubscriber.selector (http://localhost:9876/_karma_webpack_/webpack:/node_modules/@angular/router/__ivy_ngcc__/fesm2015/router.js:2610:1)
@@ -228,10 +217,15 @@ Error: Cannot match any routes. URL Segment: 'home'
     at ThrowIfEmptySubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)
     at ThrowIfEmptySubscriber.error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:55:1)
     at TakeLastSubscriber._error (http://localhost:9876/_karma_webpack_/webpack:/node_modules/rxjs/_esm2015/internal/Subscriber.js:75:1)'
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
-,Chrome 99.0.4844.51 (Windows 10) LOG: ActivatedRoute{url: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: [...]}, params: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, queryParams: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, fragment: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: ''}, data: BehaviorSubject{_isScalar: false, observers: [], closed: false, isStopped: false, hasError: false, thrownError: null, _value: Object{}}, outlet: 'primary', component: null, _futureSnapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, snapshot: ActivatedRouteSnapshot{url: [], params: Object{}, queryParams: Object{}, fragment: '', data: Object{}, outlet: 'primary', component: null, routeConfig: null, _urlSegment: UrlSegmentGroup{segments: ..., children: ..., parent: ...}, _lastPathIndex: -1, _resolve: Object{}, _routerState: RouterStateSnapshot{_root: ..., url: ...}}, _routerState: RouterState{_root: TreeNode{value: ..., children: ...}, snapshot: RouterStateSnapshot{_root: ..., url: ...}}}
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'app-toolbar' is not a known element:
+1. If 'app-toolbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-toolbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'app-navbar' is not a known element:
+1. If 'app-navbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-navbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
+,Chrome Headless 99.0.4844.51 (Windows 10) ERROR: 'NG0304: 'app-toolbar' is not a known element:
+1. If 'app-toolbar' is an Angular component, then verify that it is part of this module.
+2. If 'app-toolbar' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@NgModule.schemas' of this component to suppress this message.'
 
 ]]>
   </system-out>

@@ -65,12 +65,12 @@ stage('Static Code Analysis') {
     }
 } 
 
-  // stage('Build') {
-  //     steps {
-  //       echo "------------>Building<------------"
-  //       sh 'npm run build'
-  //     }
-  //   }
+  stage('Build') {
+      steps {
+        echo "------------>Building<------------"
+     //   sh 'npm run build'
+      }
+    }
 
     
   }

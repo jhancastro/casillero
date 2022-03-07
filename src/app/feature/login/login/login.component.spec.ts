@@ -109,4 +109,22 @@ describe('LoginComponent', () => {
     expect(component.error).toBe('User/password incorrect');
   });
 
+  it('Debe de validar login fallido desde loginUsers - sin token', () => {
+    spyOn(component.loginService,'loginUser').and.callFake(()=>of(
+        {
+            id: 1,
+            email: 'jhancas@gmail.com',
+            password: '123456789',
+            token: undefined
+        }
+     ));
+    
+    const email = component.formLogin.controls['email']; 
+    const password = component.formLogin.controls['password'];
+    email.setValue('jhancas@gmail.com');
+    password.setValue('12345678');
+    component.login()
+    expect(component.error).toBe('User/password incorrect');
+  });
+
 });

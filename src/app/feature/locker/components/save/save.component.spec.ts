@@ -150,5 +150,50 @@ describe('SaveComponent', () => {
     expect(component.dobles).toBeUndefined();
   });
 
+  it('Debe abrir ventana para asignar casillero tipo sencillo', () => {
+    const casillero : Icasilleros = {
+      id:1,
+      estado:'libre',
+      placa:'',
+      nombre:'',
+      telefono:'',
+      ingreso:'',
+      valorHora:1000
+    }
+    component.typeLocker = [{
+      id:1,
+      tipo:'sencillo',
+      valorHora:1000,
+      cantidad:50
+    }];
+    const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
+    dialogSpy.open.and.returnValue(dialogRef);
+    component.onCollect(casillero,'sencillo');
+    expect(dialogSpy.open).toHaveBeenCalled();
+  });
+
+  it('Debe abrir ventana para asignar casillero tipo doble', () => {
+    const casillero : Icasilleros = {
+      id:1,
+      estado:'libre',
+      placa:'',
+      nombre:'',
+      telefono:'',
+      ingreso:'',
+      valorHora:1500
+    }
+    component.typeLocker = [{
+      id:1,
+      tipo:'doble',
+      valorHora:1500,
+      cantidad:25
+    }];
+    const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
+    dialogSpy.open.and.returnValue(dialogRef);
+    component.onCollect(casillero,'doble');
+    expect(component.filterLocker.length).toBe(1);
+    
+  });
+
 
 });

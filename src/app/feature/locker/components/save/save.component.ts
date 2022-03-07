@@ -27,25 +27,26 @@ export class SaveComponent implements OnInit {
     onchargueData(){
     this.lockerService.getCasilleros().subscribe(
       type => this.typeLocker = type
-    )
+    );
     
     this.lockerService.getParrillaCasilleros('sencillos').subscribe(
       sencillos => this.sencillos = sencillos      
-    )
+    );
     this.lockerService.getParrillaCasilleros('dobles').subscribe(
       dobles => this.dobles = dobles
-    )
+    );
    }
 
   onCollect(data: Icasilleros, tipo: string){
+    if (tipo === 'sencillo'){
+      this.filterLocker = this.typeLocker.filter(r=>r.tipo==='sencillo');
+      data.valorHora = this.filterLocker[0].valorHora;
+    }else{
+      this.filterLocker = this.typeLocker.filter(r=>r.tipo==='doble');
+      data.valorHora = this.filterLocker[0].valorHora;
+    }
+    
     if (data.estado === 'ocupado'){
-          if (tipo === 'sencillo'){
-            this.filterLocker = this.typeLocker.filter(r=>r.tipo==='sencillo');
-            data.valorHora = this.filterLocker[0].valorHora;
-          }else{
-            this.filterLocker = this.typeLocker.filter(r=>r.tipo==='doble');
-            data.valorHora = this.filterLocker[0].valorHora;
-          }
             const winCollect = this.dialog.open(
               CollectComponent,
               { data,
@@ -54,6 +55,16 @@ export class SaveComponent implements OnInit {
             );
             winCollect.afterClosed()
             .subscribe();
+
+    }else{
+          const winCollect = this.dialog.open(
+            CollectComponent,
+            { data,
+            disableClose: false, height:'60%',width:'35%'
+            }
+          );
+          winCollect.afterClosed()
+          .subscribe();
 
     }
   }

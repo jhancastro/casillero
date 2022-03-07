@@ -72,8 +72,8 @@ describe('SaveComponent', () => {
     }];
     const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
-    component.onCollect(casillero,'sencillo');
-    expect(dialogSpy.open).toHaveBeenCalled();
+    component.onCollect(casillero,'sencillos');
+    expect(component.filterLocker.length).toBe(1);
   });
 
   it('Debe abrir ventana para cobro para tipo doble', () => {
@@ -94,7 +94,7 @@ describe('SaveComponent', () => {
     }];
     const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
-    component.onCollect(casillero,'doble');
+    component.onCollect(casillero,'dobles');
     expect(component.filterLocker.length).toBe(1);
     
   });
@@ -168,7 +168,7 @@ describe('SaveComponent', () => {
     }];
     const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
-    component.onCollect(casillero,'sencillo');
+    component.onCollect(casillero,'sencillos');
     expect(dialogSpy.open).toHaveBeenCalled();
   });
 
@@ -190,7 +190,7 @@ describe('SaveComponent', () => {
     }];
     const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
-    component.onCollect(casillero,'doble');
+    component.onCollect(casillero,'dobles');
     expect(component.filterLocker.length).toBe(1);
     
   });

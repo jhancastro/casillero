@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { MAT_DIALOG_DATA } from '@angular/material/dialog';
+import {  MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Icasilleros } from '@locker/shared/model';
 import * as moment from 'moment';
 
@@ -13,12 +13,19 @@ export class CollectComponent implements OnInit {
   fechaHoraFin : string;
   cobro : number;
   minutos : number;
+  flagfree : boolean;
   constructor(
     @Inject(MAT_DIALOG_DATA) public locker: Icasilleros,
+    public dialogRef: MatDialogRef<CollectComponent>,
   ) { }
 
-  ngOnInit(): void {
-    this.realizarCobro();
+  ngOnInit() {
+    this.flagfree = this.locker.estado ==='libre'?true:false;
+      if (!this.flagfree){
+        this.realizarCobro();
+      }else{
+        this.realizarAsignacion();
+      }
   }
 
   realizarCobro(){
@@ -29,5 +36,15 @@ export class CollectComponent implements OnInit {
     this.minutos = diff;
     const minutosHora = 60;
     this.cobro = +((diff* +this.locker.valorHora)/minutosHora).toFixed(0);
+  }
+
+  realizarAsignacion(){
+    this.locker.ingreso =  moment(new Date()).format('YYYY-MM-DD hh:mm:ss');
+    this.minutos = 0;
+    this.cobro = 0;
+  }
+
+  closeModal(){
+    this.dialogRef.close(this.locker);
   }
 }

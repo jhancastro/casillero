@@ -9,16 +9,34 @@
             <th>Información</th>
         </tr>
         <tr>
-            <td>  Cliente:  </td>
-            <td>{{locker.nombre}}</td>
+           <td>  Cliente:  </td>
+           <div [hidden] = 'flagfree'>
+              <td>{{locker.nombre}}</td> 
+            </div>
+            <input
+            [hidden] = '!flagfree'
+            [(ngModel)]="locker.nombre"
+            >
         </tr>
         <tr>
             <td>  Tel:  </td>
-            <td>{{locker.telefono}}</td>
+            <div [hidden] = 'flagfree'>
+              <td>{{locker.telefono}}</td> 
+            </div>
+            <input
+            [hidden] = '!flagfree'
+            [(ngModel)]="locker.telefono"
+            >
         </tr>
         <tr>
             <td>  Placa:  </td>
-            <td>{{locker.placa}}</td>
+              <div [hidden] = 'flagfree'>
+                <td>{{locker.placa}}</td>
+              </div>
+              <input
+              [hidden] = '!flagfree'
+              [(ngModel)]="locker.placa"
+              >
         </tr>
         <tr>
             <td>  Ingreso:  </td>
@@ -43,6 +61,7 @@
       <button
         mat-button
         class="boton1"
+      (click)="closeModal()"
         >
       <mat-icon >payment</mat-icon>
     </button>

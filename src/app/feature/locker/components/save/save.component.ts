@@ -21,7 +21,6 @@ export class SaveComponent implements OnInit {
 
   async ngOnInit() {
     this.onchargueData();
-
    }
 
     onchargueData(){
@@ -38,7 +37,7 @@ export class SaveComponent implements OnInit {
    }
 
   onCollect(data: Icasilleros, tipo: string){
-    if (tipo === 'sencillo'){
+    if (tipo === 'sencillos'){
       this.filterLocker = this.typeLocker.filter(r=>r.tipo==='sencillo');
       data.valorHora = this.filterLocker[0].valorHora;
     }else{
@@ -49,11 +48,24 @@ export class SaveComponent implements OnInit {
       const winCollect = this.dialog.open(
         CollectComponent,
         { data,
-        disableClose: false, height:'60%',width:'35%'
+        disableClose: false, height:'47%',width:'35%'
         }
       );
       winCollect.afterClosed()
-      .subscribe();
+      .subscribe(async  result => {
+        if (result?.estado === 'ocupado'){
+          result.estado = 'libre';
+          result.placa = '';
+          result.nombre = '';
+          result.telefono = '';
+          result.ingreso = '';
+          await this.lockerService.patchlockers(result,tipo).toPromise();
+        }
+        else{
+          result.estado = 'ocupado';
+          await this.lockerService.patchlockers(result,tipo).toPromise();
+        }
+      });
       
   }
 }

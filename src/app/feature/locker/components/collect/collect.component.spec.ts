@@ -5,7 +5,7 @@ import { MatDialog, MatDialogModule,  MatDialogRef,  MAT_DIALOG_DATA } from '@an
 import { CollectComponent } from './collect.component';
 
 describe('CollectComponent', () => {
-  let component: CollectComponent;
+  // let component: CollectComponent;
   let fixture: ComponentFixture<CollectComponent>;
   let dialogSpy : jasmine.SpyObj<MatDialog>;
   let componentSpy : jasmine.SpyObj<CollectComponent>;
@@ -40,13 +40,13 @@ describe('CollectComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CollectComponent);
-    component = fixture.componentInstance;
+   // component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  // it('should create', () => {
+  //   expect(component).toBeTruthy();
+  // });
 
   // it('Debe de retornar un valor no valido de cobro', () => {
   //   component.ngOnInit(); 

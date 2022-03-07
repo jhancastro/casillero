@@ -45,27 +45,15 @@ export class SaveComponent implements OnInit {
       this.filterLocker = this.typeLocker.filter(r=>r.tipo==='doble');
       data.valorHora = this.filterLocker[0].valorHora;
     }
-    
-    if (data.estado === 'ocupado'){
-            const winCollect = this.dialog.open(
-              CollectComponent,
-              { data,
-              disableClose: false, height:'60%',width:'35%'
-              }
-            );
-            winCollect.afterClosed()
-            .subscribe();
 
-    }else{
-          const winCollect = this.dialog.open(
-            CollectComponent,
-            { data,
-            disableClose: false, height:'60%',width:'35%'
-            }
-          );
-          winCollect.afterClosed()
-          .subscribe();
-
-    }
+      const winCollect = this.dialog.open(
+        CollectComponent,
+        { data,
+        disableClose: false, height:'60%',width:'35%'
+        }
+      );
+      winCollect.afterClosed()
+      .subscribe();
+      
   }
 }

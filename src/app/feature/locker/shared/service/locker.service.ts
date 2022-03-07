@@ -35,7 +35,7 @@ patchlockers(input: Icasilleros, tipo: string): Observable<Icasilleros>{
   return this.http.patch<Icasilleros>(
     `${environment.endpoint}/${tipo}/${input.id}`,
       input
-  )
+  );
 }
   
 }

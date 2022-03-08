@@ -46,8 +46,8 @@ export class LoginComponent implements OnInit{
       if (resp[0]?.token || resp?.token ) {
         localStorage.setItem('token', resp.token);
         this.token =  resp.token;
-        const urlLogin = '/login'
-        this.router.navigateByUrl(urlLogin);
+        // const urlLogin = '/login'
+        // this.router.navigateByUrl(urlLogin);
         return true;
       }else{
         this.error = 'User/password incorrect';

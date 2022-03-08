@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {CanActivate,  UrlTree} from '@angular/router';
+import {CanActivate,  Router,  UrlTree} from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 export class SecurityGuard implements CanActivate {
 token: string;
   constructor(
-    // private router: Router
+     private router: Router
     ) {
   }
 
@@ -18,8 +18,8 @@ token: string;
 
   validateToken(token: string){
     if (!token){
-      // const urlLogin = '/login';
-      // this.router.navigate([urlLogin]);
+       const urlLogin = '/login';
+       this.router.navigate([urlLogin]);
       return true;
     }
     return false;
@@ -27,8 +27,8 @@ token: string;
 
   public logout() {
     localStorage.clear();
-    // const urlHome = '/login';
-    // this.router.navigate([urlHome]);
+     const urlHome = '/login';
+     this.router.navigate([urlHome]);
     return true;
   }
 

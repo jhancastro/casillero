@@ -4,12 +4,13 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
+import { HomeComponent } from '@home/home.component';
 import { of } from 'rxjs';
 import { LoginComponent } from './login.component';
 import {LoginService} from './shared/login/login.service';
 
 
-const testUrl = '/home';
+const testUrl = 'home';
 describe('LoginComponent', () => {
   let component: LoginComponent;
   let fixture: ComponentFixture<LoginComponent>;
@@ -18,15 +19,17 @@ describe('LoginComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports:[HttpClientTestingModule,
-         RouterTestingModule,
+         RouterTestingModule.withRoutes(
+           [{path: testUrl, component: HomeComponent}]
+         ),
          FormsModule,
          ReactiveFormsModule
         ],
       declarations: [ LoginComponent ],
       providers:[LoginService,
-        { 
+       /* { 
           provide: RouterTestingModule, useValue: {url: testUrl } 
-        }
+        }*/
       ],schemas: [NO_ERRORS_SCHEMA]
     })
     .compileComponents();

@@ -1,13 +1,18 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { TestBed, inject } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
+import { LoginComponent } from 'src/app/feature/login/login/login.component';
 import { SecurityGuard } from './security.guard';
 
+const testUrl = 'login';
 describe('SecurityGuard', () => {
  
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule.withRoutes(
+        [{path: testUrl, component: LoginComponent}]
+      )
+      ],
       providers: [SecurityGuard],
       schemas:[NO_ERRORS_SCHEMA]
     });

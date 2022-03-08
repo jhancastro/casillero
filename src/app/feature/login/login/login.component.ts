@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import {LoginService} from './shared/login/login.service';
 
 
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit{
   
 
   constructor(
-    // private readonly router: Router,
+     private readonly router: Router,
     private formBuilder: FormBuilder,
     public loginService : LoginService
   ) {
@@ -46,8 +47,8 @@ export class LoginComponent implements OnInit{
       if (resp[0]?.token || resp?.token ) {
         localStorage.setItem('token', resp.token);
         this.token =  resp.token;
-        // const urlLogin = '/login'
-        // this.router.navigateByUrl(urlLogin);
+         const urlLogin = '/home'
+         this.router.navigateByUrl(urlLogin);
         return true;
       }else{
         this.error = 'User/password incorrect';

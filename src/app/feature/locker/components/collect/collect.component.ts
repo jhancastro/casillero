@@ -22,7 +22,6 @@ export class CollectComponent implements OnInit {
 
   ngOnInit() {
     this.flagfree = this.locker.estado ==='libre'?true:false; 
-    this.flagfree = true;
       if (!this.flagfree){
         this.realizarCobro();
       }else{

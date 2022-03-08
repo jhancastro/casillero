@@ -60,7 +60,7 @@ describe('CollectComponent', () => {
 
   it('Debe de realizar el llamado al metodo realizarAsignacion', () => {
     component.flagfree = true;
-    component.ngOnInit();
+    component.realizarAsignacion();
     expect(component.minutos).toBe(0);
   });
 

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {CanActivate, Router, UrlTree} from '@angular/router';
+import {CanActivate,  UrlTree} from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -7,7 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class SecurityGuard implements CanActivate {
 token: string;
-  constructor(private router: Router) {
+  constructor(
+    // private router: Router
+    ) {
   }
 
   canActivate(): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {LoginService} from './shared/login/login.service';
 
@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit{
   
 
   constructor(
-    private readonly router: Router,
+    // private readonly router: Router,
     private formBuilder: FormBuilder,
     public loginService : LoginService
   ) {

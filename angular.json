@@ -32,7 +32,7 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"          
             ],
-            "scripts": []
+            "scripts": []            
           },
           "configurations": {
             "production": {
@@ -97,7 +97,8 @@
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css" 
             ],
-            "scripts": []
+            "scripts": [],
+            "codeCoverageExclude": ["src/app/core/interceptor","src/app/shared/directivas/error-campos/errores"]
           }
         },
         "lint": {

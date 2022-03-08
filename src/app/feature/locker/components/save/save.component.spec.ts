@@ -70,7 +70,7 @@ describe('SaveComponent', () => {
       valorHora:1000,
       cantidad:50
     }];
-    const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
+    const dialogRef = {afterClosed: () => of(casillero) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
     component.onCollect(casillero,'sencillos');
     expect(component.filterLocker.length).toBe(1);
@@ -92,7 +92,7 @@ describe('SaveComponent', () => {
       valorHora:1500,
       cantidad:25
     }];
-    const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
+    const dialogRef = {afterClosed: () => of(casillero) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
     component.onCollect(casillero,'dobles');
     expect(component.filterLocker.length).toBe(1);
@@ -166,7 +166,7 @@ describe('SaveComponent', () => {
       valorHora:1000,
       cantidad:50
     }];
-    const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
+    const dialogRef = {afterClosed: () => of(casillero) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
     component.onCollect(casillero,'sencillos');
     expect(dialogSpy.open).toHaveBeenCalled();
@@ -188,7 +188,7 @@ describe('SaveComponent', () => {
       valorHora:1500,
       cantidad:25
     }];
-    const dialogRef = {afterClosed: () => of(true) } as MatDialogRef<unknown>;
+    const dialogRef = {afterClosed: () => of(casillero) } as MatDialogRef<unknown>;
     dialogSpy.open.and.returnValue(dialogRef);
     component.onCollect(casillero,'dobles');
     expect(component.filterLocker.length).toBe(1);

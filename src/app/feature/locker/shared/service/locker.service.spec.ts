@@ -8,16 +8,24 @@ import { LockerService } from './locker.service';
 
 describe('LockerService', () => {
   let service: LockerService;
-  let httpClientSpy : { get: jasmine.Spy};
+  let httpClientSpy : { get: jasmine.Spy , patchlockers : jasmine.Spy };
 
   beforeEach(() => {
-    httpClientSpy = jasmine.createSpyObj('HttpClient',['get']);
+    httpClientSpy = jasmine.createSpyObj(
+      'HttpClient',
+      ['get',
+      'getCasilleros',
+      'getOcupados',
+      'getParrillaCasilleros',
+      'patchlockers'
+    ]);
+    
     service = new LockerService(httpClientSpy as any);
     TestBed.configureTestingModule({
       imports:[HttpClientTestingModule,Router],
       schemas: [NO_ERRORS_SCHEMA]
     });
-    //service = TestBed.inject(LockerService);
+  //  service = TestBed.inject(LockerService);
   });
 
   it('should be created', () => {
@@ -78,6 +86,28 @@ describe('LockerService', () => {
     });
 
   });
+
+  /*
+  it('Deberia permitir la modificacion de la informacion del casillero por Id', (done:DoneFn) => {
+    //Mock de datos
+    const mockDatos = 
+      {
+        id:1,
+        estado:'ocupado',
+        placa:'FTH65B',
+        nombre:'Juan Vargas',
+        telefono:'3041447671',
+        ingreso:'2022-03-01 09:28:58'};
+    
+    httpClientSpy.patchlockers.and.returnValue(of(mockDatos));
+    mockDatos.placa = 'DHS098'
+    service.patchlockers(mockDatos,'dobles')
+    .subscribe(result =>{
+      expect(result.placa).toEqual(mockDatos.placa);
+      done();
+    });
+
+  });*/
 
 
 });

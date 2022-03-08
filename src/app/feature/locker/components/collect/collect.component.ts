@@ -13,14 +13,15 @@ export class CollectComponent implements OnInit {
   fechaHoraFin : string;
   cobro : number;
   minutos : number;
-  flagfree : boolean;
+  flagfree? : boolean;
   constructor(
     @Inject(MAT_DIALOG_DATA) public locker: Icasilleros,
     public dialogRef: MatDialogRef<CollectComponent>,
-  ) { }
+  ) {}
 
   ngOnInit() {
-    this.flagfree = this.locker.estado ==='libre'?true:false;
+    //this.flagfree = this.locker.estado ==='libre'?true:false; 
+    this.flagfree = true;
       if (!this.flagfree){
         this.realizarCobro();
       }else{

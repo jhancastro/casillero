@@ -1,7 +1,6 @@
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatDialog, MatDialogModule,  MatDialogRef,  MAT_DIALOG_DATA } from '@angular/material/dialog';
-
 import { CollectComponent } from './collect.component';
 
 describe('CollectComponent', () => {
@@ -29,8 +28,8 @@ describe('CollectComponent', () => {
       providers: [
         { provide: MAT_DIALOG_DATA, useValue: { casillero } },
         { provide: MatDialog, useValue: dialogSpy },
-        {provide : MatDialogRef , useValue:{} },
-        {provide : CollectComponent , useValue: componentSpy },
+        { provide : MatDialogRef, useValue: { close: () => {} } },
+        { provide : CollectComponent , useValue: componentSpy },
 
     ],
     schemas:[NO_ERRORS_SCHEMA]
@@ -48,16 +47,6 @@ describe('CollectComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  // it('Debe de retornar un valor no valido de cobro', () => {
-  //   component.ngOnInit(); 
-  //   expect(component.cobro).toEqual(NaN);
-  // });
-
-  // it('Debe de inicializar bandera de asignacion o cobro', () => {
-  //   component.ngOnInit(); 
-  //   expect(component.flagfree).toBeFalse();
-  // });
-
   it('Debe de realizar el llamado al metodo realizarAsignacion', () => {
     component.flagfree = true;
     component.realizarAsignacion();
@@ -70,5 +59,10 @@ describe('CollectComponent', () => {
     expect(component.minutosHora).toBe(60);
   });
 
+  it('Debe de cerrar el modal abierto', () => {
+    const dialogRef = {close: null } as MatDialogRef<unknown>;
+    dialogSpy.open.and.returnValue(dialogRef);
+    expect(dialogRef.close).toEqual(null);
+  });
 
 });

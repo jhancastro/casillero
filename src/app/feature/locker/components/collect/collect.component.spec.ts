@@ -64,4 +64,11 @@ describe('CollectComponent', () => {
     expect(component.minutos).toBe(0);
   });
 
+  it('Debe de realizar el llamado al metodo realizarCobro', () => {
+    component.flagfree = true;
+    component.realizarCobro();
+    expect(component.minutosHora).toBe(60);
+  });
+
+
 });

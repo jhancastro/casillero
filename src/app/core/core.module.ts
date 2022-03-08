@@ -8,13 +8,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HttpService } from './services/http.service';
 import { ManejadorError } from './interceptor/manejador-error';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from '@home/home.component';
-
-export const routes: Routes = [
-  { path: 'home', component: HomeComponent, canActivate: [SecurityGuard]  },
-  { path: 'login', loadChildren: () => import('./../../app/feature/login/login/login.module').then(m => m.LoginModule) },
-];
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [ToolbarComponent, NavbarComponent],

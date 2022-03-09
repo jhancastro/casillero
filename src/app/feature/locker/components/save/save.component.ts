@@ -48,11 +48,12 @@ export class SaveComponent implements OnInit {
       const winCollect = this.dialog.open(
         CollectComponent,
         { data,
-        disableClose: false, height:'47%',width:'35%'
+        disableClose: false, height:'46%',width:'25%'
         }
       );
       winCollect.afterClosed()
       .subscribe(async  result => {
+        if (result){
         if (result?.estado === 'ocupado'){
           result.estado = 'libre';
           result.placa = '';
@@ -60,11 +61,10 @@ export class SaveComponent implements OnInit {
           result.telefono = '';
           result.ingreso = '';
           await this.lockerService.patchlockers(result,tipo).toPromise();
-        }
-        else{
+        }else{
           result.estado = 'ocupado';
           await this.lockerService.patchlockers(result,tipo).toPromise();
-        }
+        }}
       });
       
   }

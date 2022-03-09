@@ -1,34 +1,17 @@
-.tarjeta{
-    width: 7rem !important;
-    padding-top: 5%;
+.content {
+    padding: 16px;
+    align-items: center;
 }
 
-.forma {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
+.content > mat-cart {
+    width: 200px;
 }
 
-.boton1 {
-    background-color: #1ba1b8;
-    width: 110%
-}
-
-.card1 {
-    width: 100%
-}
-
-.tabp {
-    overflow-x: hidden;
-}
-
-@media screen and (max-width: 400px) {
-    .tarjeta{
-        width: 7rem !important;
-        padding-top: 2%;
-    }
-
-    .forma {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
+.mat-card-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
